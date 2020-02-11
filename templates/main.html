@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bird Identify</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <style>
+
+    </style>
+
+</head>
+<body>
+<div style="text-align: center">
+    <p2>鸟类识别</p2>
+</div>
+
+<form action="/recognition" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div style="text-align: center">
+        <input type="file" class="file-btn" name="pic" accept="image/jpg,image/jpeg,image/png,image/svg">
+        <input type="submit" value="提交">
+    </div>
+</form>
+
+</body>
+</html>
