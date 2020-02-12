@@ -6,9 +6,33 @@
 </head>
 <body>
 <div style="text-align: center">
-    <p> 结果为: {{ name }} </p>
-    <p> 可信度为: {{ score }} </p>
+
+    <table border="1" align="center">
+        <thead>
+            <tr>
+                <td>结果</td>
+                <td>可信度</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for r in result %}
+            <tr>
+                {% for info in r %}
+                    <td>{{ info }}</td>
+                {%  endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p> </p>
     <a type="button" href="/main"> 返回首页</a>
+</div>
+
+<div align="center" style="text-align: center">
+    <p></p>
+    <p></p>
+    <p>Powered by Zhouxianpan</p>
+    <p>Email: zhouxianpan@vip.qq.com</p>
 </div>
 
 </body>

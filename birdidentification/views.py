@@ -2,6 +2,8 @@ from django.shortcuts import render, HttpResponse, redirect
 import urllib
 from urllib.request import urlopen
 import base64
+from PIL import Image
+from io import BytesIO
 
 
 def main(request):
@@ -14,6 +16,7 @@ def recognition_post(request):
         return render(request, 'main.html')
     if request.method == 'POST':
         file_obj = request.FILES.get('pic')
+        pic = Image.open(file_obj).convert('RGB')
         host = 'https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=rENKxWSwY4OW4UmRGNKpKzTw&client_secret=Oojh1HqumwUNaPGnoGuSVFWqGcxyqvZw'
         apirequest = urllib.request.Request(host)
         apirequest.add_header('Content-Type', 'application/json; charset=UTF-8')
@@ -23,15 +26,17 @@ def recognition_post(request):
         # eval将字符串转换成字典
         content_dir = eval(content_str)
         access_token = content_dir['access_token']
-        print(access_token)
 
         request_url = "https://aip.baidubce.com/rest/2.0/image-classify/v1/animal"
 
+        w, h = pic.size
+        if w > 300:
+            pic.thumbnail((300, h / w * 300))
 
-        # 二进制方式打开图片文件
-        f = file_obj
-        img = base64.b64encode(f.read())
-
+        output_buffer = BytesIO()
+        pic.save(output_buffer, format='JPEG')
+        byte_data = output_buffer.getvalue()
+        img = base64.b64encode(byte_data)
 
         params = {"image": img}
         params = urllib.parse.urlencode(params).encode(encoding='UTF8')
@@ -44,18 +49,26 @@ def recognition_post(request):
         content_str = str(content, encoding="utf-8")
         content_dir = eval(content_str)
 
+
         result = content_dir['result']
 
-        result_score = result[0]['score']
-        result_name = result[0]['name']
+        result_list = []
+        for i in result:
+            result_list.append([i['name'], i['score']])
 
-        request.session['name'] = result_name
-        request.session['score'] = result_score
+        request.session['result'] = result_list
+
+        if request.META.get('HTTP_X_FORWARDED_FOR'):
+            ip = request.META.get("HTTP_X_FORWARDED_FOR")
+        else:
+            ip = request.META.get("REMOTE_ADDR")
+
+        print("IP :", ip, '   upload picture size :', (w, h), '    result: ', result_list)
 
         return redirect('/result')
 
 
 def result(request):
     if request.method == 'GET':
-        content = {"score": request.session['score'], "name": request.session['name']}
+        content = {"result": request.session['result']}
         return render(request, 'result.html', content)
