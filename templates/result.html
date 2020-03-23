@@ -3,25 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Result</title>
+    <style>
+        th, td {
+        display: block;
+        border-bottom: black solid 1px;
+        }
+        tr {
+        display: block;
+        float: left;
+        }
+    </style>
 </head>
 <body>
 <div style="text-align: center">
+    <h4>识别结果如下，点击收听鸣声后请耐心等待加载</h4>
 
     <table border="1" align="center">
-        <thead>
+        <tbody>
             <tr>
                 <td>结果</td>
-                <td>可信度</td>
+                {% for i in name %}
+                <td>{{ i }}</td>
+                {% endfor %}
             </tr>
-        </thead>
-        <tbody>
-            {% for r in result %}
             <tr>
-                {% for info in r %}
-                    <td>{{ info }}</td>
-                {%  endfor %}
+                <td>可信度</td>
+                {% for i in score %}
+                <td>{{ i }}</td>
+                {% endfor %}
             </tr>
-            {% endfor %}
+            <tr>
+                <td>学名</td>
+                {% for i in scientific_name %}
+                <td>{{ i }}</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>鸣声</td>
+                {% for i in songs_url %}
+                    {% if i == "暂无结果" %}
+                        <td>暂无结果</td>
+                    {% else %}
+                        <td><a href="{{ i }}">点击这里</a></td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>百度百科</td>
+                {% for i in url %}
+                    <td><a href="{{ i }}">点击这里</a></td>
+                {% endfor %}
+            </tr>
         </tbody>
     </table>
     <p> </p>
@@ -31,8 +63,8 @@
 <div align="center" style="text-align: center">
     <p></p>
     <p></p>
-    <p>Powered by Zhouxianpan</p>
-    <p>Email: zhouxianpan@vip.qq.com</p>
+    <p style="font-size: smaller">Powered by Zhouxianpan</p>
+    <p style="font-size: smaller">Email: zhouxianpan@vip.qq.com</p>
 </div>
 
 </body>

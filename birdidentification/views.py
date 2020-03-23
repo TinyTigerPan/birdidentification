@@ -1,9 +1,37 @@
-from django.shortcuts import render, HttpResponse, redirect
+#!/usr/bin/env python
+# coding:utf-8
+
+import requests
+from bs4 import BeautifulSoup
+from urllib.parse import quote
+from django.shortcuts import render, redirect
 import urllib
 from urllib.request import urlopen
 import base64
 from PIL import Image
 from io import BytesIO
+from django.utils.safestring import mark_safe
+
+
+def get_songs(birds):
+    base_url = 'https://baike.baidu.com/item/'
+    pa = quote(birds)
+    url = base_url + pa
+    headers = {
+        'User-Agent': '',
+        'Cookie': ''
+    }
+
+    response = requests.get(url, headers=headers)
+    response.encoding = response.apparent_encoding
+    soup = BeautifulSoup(response.text, 'lxml')
+
+    content = soup.select('div.lemma-summary > div.para > i')
+    scientific_name = str(content[0])[3:-4]
+
+    songs_url = 'https://www.xeno-canto.org/explore?query=' + quote(scientific_name)
+
+    return scientific_name, songs_url
 
 
 def main(request):
@@ -52,23 +80,44 @@ def recognition_post(request):
 
         result = content_dir['result']
 
-        result_list = []
+        name_list = []
+        score_list = []
+        scientific_name_list = []
+        songs_url_list = []
+        url_list = []
         for i in result:
-            result_list.append([i['name'], i['score']])
+            try:
+                scientific_name, songs_url = get_songs(i['name'])
+            except Exception as e:
+                name_list.append(i['name'])
+                score_list.append(i['score'])
+                scientific_name_list.append('暂无结果')
+                songs_url_list.append('暂无结果')
+            else:
+                name_list.append(i['name'])
+                score_list.append(i['score'])
+                scientific_name_list.append(scientific_name)
+                songs_url_list.append(songs_url)
+            url_list.append('https://baike.baidu.com/item/'+quote(i['name']))
 
-        request.session['result'] = result_list
+        request.session['name'] = name_list
+        request.session['score'] = score_list
+        request.session['scientific_name'] = scientific_name_list
+        request.session['songs_url'] = songs_url_list
+        request.session['url'] = url_list
 
         if request.META.get('HTTP_X_FORWARDED_FOR'):
             ip = request.META.get("HTTP_X_FORWARDED_FOR")
         else:
             ip = request.META.get("REMOTE_ADDR")
 
-        print("IP :", ip, '   upload picture size :', (w, h), '    result: ', result_list)
-
+        print("IP :", ip, '   upload picture size :', (w, h), '    result: ', name_list[0])
         return redirect('/result')
 
 
 def result(request):
     if request.method == 'GET':
-        content = {"result": request.session['result']}
+        content = {"name":request.session['name'], "score":request.session['score'],
+                   "scientific_name": request.session['scientific_name'],
+                   "songs_url": request.session['songs_url'], "url": request.session['url']}
         return render(request, 'result.html', content)
