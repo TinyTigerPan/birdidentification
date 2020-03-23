@@ -10,10 +10,9 @@ from urllib.request import urlopen
 import base64
 from PIL import Image
 from io import BytesIO
-from django.utils.safestring import mark_safe
 
 
-def get_songs(birds):
+def get_scientific_name(birds):
     base_url = 'https://baike.baidu.com/item/'
     pa = quote(birds)
     url = base_url + pa
@@ -28,10 +27,7 @@ def get_songs(birds):
 
     content = soup.select('div.lemma-summary > div.para > i')
     scientific_name = str(content[0])[3:-4]
-
-    songs_url = 'https://www.xeno-canto.org/explore?query=' + quote(scientific_name)
-
-    return scientific_name, songs_url
+    return scientific_name
 
 
 def main(request):
@@ -45,7 +41,8 @@ def recognition_post(request):
     if request.method == 'POST':
         file_obj = request.FILES.get('pic')
         pic = Image.open(file_obj).convert('RGB')
-        host = 'https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=rENKxWSwY4OW4UmRGNKpKzTw&client_secret=Oojh1HqumwUNaPGnoGuSVFWqGcxyqvZw'
+        host = 'https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&' \
+               'client_id=rENKxWSwY4OW4UmRGNKpKzTw&client_secret=Oojh1HqumwUNaPGnoGuSVFWqGcxyqvZw'
         apirequest = urllib.request.Request(host)
         apirequest.add_header('Content-Type', 'application/json; charset=UTF-8')
         response = urlopen(apirequest)
@@ -77,7 +74,6 @@ def recognition_post(request):
         content_str = str(content, encoding="utf-8")
         content_dir = eval(content_str)
 
-
         result = content_dir['result']
 
         name_list = []
@@ -87,7 +83,8 @@ def recognition_post(request):
         url_list = []
         for i in result:
             try:
-                scientific_name, songs_url = get_songs(i['name'])
+                scientific_name = get_scientific_name(i['name'])
+                songs_url = 'https://www.xeno-canto.org/explore?query=' + quote(scientific_name)
             except Exception as e:
                 name_list.append(i['name'])
                 score_list.append(i['score'])
@@ -117,7 +114,7 @@ def recognition_post(request):
 
 def result(request):
     if request.method == 'GET':
-        content = {"name":request.session['name'], "score":request.session['score'],
+        content = {"name": request.session['name'], "score": request.session['score'],
                    "scientific_name": request.session['scientific_name'],
                    "songs_url": request.session['songs_url'], "url": request.session['url']}
         return render(request, 'result.html', content)
