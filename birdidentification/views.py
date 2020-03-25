@@ -20,6 +20,7 @@ def get_scientific_name(birds):
         'User-Agent': '',
         'Cookie': ''
     }
+    print(url)
 
     response = requests.get(url, headers=headers)
     response.encoding = response.apparent_encoding
@@ -86,6 +87,7 @@ def recognition_post(request):
                 scientific_name = get_scientific_name(i['name'])
                 songs_url = 'https://www.xeno-canto.org/explore?query=' + quote(scientific_name)
             except Exception as e:
+                print(e)
                 name_list.append(i['name'])
                 score_list.append(i['score'])
                 scientific_name_list.append('暂无结果')
