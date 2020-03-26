@@ -20,13 +20,14 @@ def get_scientific_name(birds):
         'User-Agent': '',
         'Cookie': ''
     }
-    print(url)
+    print("url" + url)
 
     response = requests.get(url, headers=headers)
     response.encoding = response.apparent_encoding
     soup = BeautifulSoup(response.text, 'lxml')
 
     content = soup.select('div.lemma-summary > div.para > i')
+    print("content+" + content)
     scientific_name = str(content[0])[3:-4]
     return scientific_name
 
