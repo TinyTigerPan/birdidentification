@@ -1,0 +1,1132 @@
+1	Ñ©ğÈ	Snow Partridge
+2	²ØÑ©¼¦	Tibetan Snowcock
+3	°¢¶ûÌ©Ñ©¼¦	Altai Snowcock
+4	°µ¸¹Ñ©¼¦	Himalayan Snowcock
+5	ïôğÈ	Pheasant Grouse
+6	ËÄ´¨ïôğÈ	Sichuan Pheasant Partridge
+7	Ê¯¼¦	Chukar
+8	´óÊ¯¼¦	Rusty-necklaced Partridge
+9	ÖĞ»ªğÑğ³	Chinese Francolin
+10	»ÒÉ½ğÈ	Grey Partridge
+11	°ß³áÉ½ğÈ	Daurian Partridge
+12	¸ßÔ­É½ğÈ	Tibetan Partridge
+13	ğÆğÈ	Common Quail
+14	ÈÕ±¾ğÆğÈ	Japanese Quail
+15	À¶ĞØğÈ	Blue-breasted Quail
+16	»·¾±É½ğÑğ³	Hill Partridge
+17	ºìºíÉ½ğÑğ³	Rufous-throated Partridge
+18	°×¼ÕÉ½ğÑğ³	White-cheeked Partridge
+19	Ì¨ÍåÉ½ğÑğ³	White-throated Hill Partridge
+20	ºìĞØÉ½ğÑğ³	Red-breasted Hill Partridge
+21	ºÖĞØÉ½ğÑğ³	Brown-breasted Hill Partridge
+22	ËÄ´¨É½ğÑğ³	Sichuan Partridge
+23	°×Ã¼É½ğÑğ³	White-necklaced Partridge
+24	º£ÄÏÉ½ğÑğ³	Hainan Partridge
+25	ÂÌ½ÅÉ½ğÑğ³	Scaly-breasted Partridge
+26	×ØĞØÖñ¼¦	Mountain Bamboo-Partridge
+27	»ÒĞØÖñ¼¦	Chinese Bamboo-Partridge
+28	Ñªïô	Blood Pheasant
+29	ºÚÍ·½Çïô	Western Tragopan
+30	ºìĞØ½Çïô	Satyr Tragopan
+31	»Ò¸¹½Çïô	Grey-bellied Tragopan
+32	ºì¸¹½Çïô	Temminck's Tragopan
+33	»Æ¸¹½Çïô	Yellow-bellied Tragopan
+34	É×¼¦	Yellow-necked koklass pheasa
+35	×ØÎ²ºçïô	Himalayan Monal Pheasant
+36	°×Î²ÉÒºçïô	Sclater's Monal Pheasant
+37	ÂÌÎ²ºçïô	Chinese Monal Pheasant
+38	Ô­¼¦	Red Junglefowl
+39	ºÚğÂ	Kalij Pheasant
+40	°×ğÂ	Silver Pheasant
+41	À¶ğÂ	Taiwan Blue Pheasant
+42	²ØÂí¼¦	Tibetan Eared-pheasant
+43	°×Âí¼¦	White Eared-Pheasant
+44	ºÖÂí¼¦	Brown Eared-Pheasant
+45	À¶Âí¼¦	Blue Eared Pheasant
+46	°×¾±³¤Î²ïô	White-necked Long-tailed Pheas
+47	ºÚ¾±³¤Î²ïô	Mrs.Hume's Pheasant
+48	ºÚ³¤Î²ïô	Taiwan Long-tailed Pheasant
+49	°×¹Ú³¤Î²ïô	White-crowned Long-tailed Phea
+50	ïô¼¦	Common Pheasant
+51	ºì¸¹½õ¼¦	Golden Pheasant
+52	°×¸¹½õ¼¦	Lady Amherst's Pheasant
+53	»Ò¿×È¸ïô	Hainan grey peacock-pheasant
+54	º£ÄÏ¿×È¸ïô	Hainan Peacock Pheasant
+55	ÂÌ¿×È¸	Green Peafowl
+56	Á­³á¼¦	Sickle-winged Grouse
+57	ÁøÀ×Äñ	Willow Ptarmigan
+58	ÑÒÀ×Äñ	Rock Ptarmigan
+59	ºÚÇÙ¼¦	Black Grouse
+60	Î÷·½ËÉ¼¦	Western Capercaillie
+61	ºÚ×ìËÉ¼¦	Spotted Capercaillie
+62	»¨Î²é»¼¦	Hazel Grouse
+63	°ßÎ²é»¼¦	Chinese Hazel Grouse
+64	ÀõÊ÷Ñ¼	Tree Duck
+65	°×Í·Ó²Î²Ñ¼	White-headed Stiff-tailed Duck
+66	ğà±ÇÌì¶ì	White Swan
+67	´óÌì¶ì	Whooper Swan
+68	Ğ¡Ìì¶ì	Whistling Swan
+69	ºèÑã	Swan Goose
+70	¶¹Ñã	Bean Goose
+71	°×¶îÑã	White-fronted Goose
+72	Ğ¡°×¶îÑã	Lesser White-fronted Goose
+73	»ÒÑã	Greylag Goose
+74	°ßÍ·Ñã	Bar-headed Goose
+75	Ñ©Ñã	Snow Goose
+76	¼ÓÄÃ´óÑã	Canada Goose
+77	ºÚÑã	Brent Goose
+78	ºìĞØºÚÑã	Red-breasted Goose
+79	³àÂéÑ¼	Ruddy Shelduck
+80	¹ÚÂéÑ¼	Crested Shelduck
+81	ÇÌ±ÇÂéÑ¼	Common Shelduck
+82	ÁöÑ¼	Comb Duck
+83	ÃŞÙì	Cotton Teal
+84	Ô§Ñì	Mandarin Duck
+85	³à°òÑ¼	Gadwall
+86	ÂŞÎÆÑ¼	Falcated Duck
+87	³à¾±Ñ¼	Wigeon
+88	ÆÏÌÑĞØÑ¼	American Wigeon
+89	ÂÌÍ·Ñ¼	Mallard
+90	°ß×ìÑ¼	Spot-billed Duck
+91	×Ø¾±Ñ¼	Philippine Duck
+92	Åı×ìÑ¼	Shoveller
+93	ÕëÎ²Ñ¼	Pintail
+94	°×Ã¼Ñ¼	Garganey
+95	»¨Á³Ñ¼	Baikal Teal
+96	ÂÌ³áÑ¼	Common Teal
+97	ÔÆÊ¯°ßÑ¼	Marbled Teal
+98	³à×ìÇ±Ñ¼	Red-crested Pochard
+99	ºìÍ·Ç±Ñ¼	Common Pochard
+100	·«±³Ç±Ñ¼	Canvasback
+101	°×ÑÛÇ±Ñ¼	White-eyed Pochard
+102	ÇàÍ·Ç±Ñ¼	Baer's Pochard
+103	·ïÍ·Ç±Ñ¼	Tufted Duck
+104	°ß±³Ç±Ñ¼	Greater Scaup
+105	Ğ¡ÈŞÑ¼	Steller's Eider
+106	³óÑ¼	Harlequin Duck
+107	³¤Î²Ñ¼	Long-tailed Duck
+108	ºÚº£·¬Ñ¼	Black Scoter
+109	°ßÁ³º£·¬Ñ¼	White-winged Scoter
+110	ÈµÑ¼	Common Goldeneye
+111	°×ÇïÉ³Ñ¼	Smew
+112	ºìĞØÇïÉ³Ñ¼	Red-breasted Merganser
+113	ÖĞ»ªÇïÉ³Ñ¼	Scaly-sided Merganser
+114	ÆÕÍ¨ÇïÉ³Ñ¼	Common Merganser
+115	ÁÖÈıÖºğÈ	Small Buttonquail
+116	»Æ½ÅÈıÖºğÈ	Yellow-legged Buttonquail
+117	×ØÈıÖºğÈ	Barred Buttonquail
+120	°ß¼§×ÄÄ¾Äñ	Speckled Piculet
+121	°×Ã¼×Ø×ÄÄ¾Äñ	White-browed Piculet
+122	ĞÇÍ·×ÄÄ¾Äñ	Grey-capped Woodpecker
+123	Ğ¡ĞÇÍ·×ÄÄ¾Äñ	Pygmy Woodpecker
+124	Ğ¡°ß×ÄÄ¾Äñ	Lesser Spotted Woodpecker
+125	²èĞØ°ß×ÄÄ¾Äñ	Fulvous-breasted Woodpecker
+126	ÎÆĞØ×ÄÄ¾Äñ	Stripe-breasted Woodpecker
+127	×Ø¸¹×ÄÄ¾Äñ	Rufous-bellied Woodpecker
+128	³àĞØ×ÄÄ¾Äñ	Crimson-breasted Woodpecker
+129	»Æ¾±×ÄÄ¾Äñ	Darjeeling Woodpecker
+130	°×±³×ÄÄ¾Äñ	White-backed Woodpecker
+131	´ó°ß×ÄÄ¾Äñ	Great Spotted Woodpecker
+132	°×³á×ÄÄ¾Äñ	White-winged Woodpecker
+133	ÈıÖº×ÄÄ¾Äñ	Three-toed Woodpecker
+134	Àõ×ÄÄ¾Äñ	Rufous Woodpecker
+135	°×¸¹ºÚ×ÄÄ¾Äñ	White-bellied Woodpecker
+136	ºÚ×ÄÄ¾Äñ	Black Woodpecker
+137	»Æ¹Ú×ÄÄ¾Äñ	Lesser Yellownape
+138	´ó»Æ¹Ú×ÄÄ¾Äñ	Greater Yellownape
+139	»¨¸¹ÂÌ×ÄÄ¾Äñ	Laced Woodpecker
+140	ÁÛºíÂÌ×ÄÄ¾Äñ	Streak-throated Woodpecker
+141	ÁÛ¸¹ÂÌ×ÄÄ¾Äñ	Scaly-bellied Woodpecker
+142	ºì¾±ÂÌ×ÄÄ¾Äñ	Red-collared Woodpecker
+143	»ÒÍ·ÂÌ×ÄÄ¾Äñ	Grey-headed Woodpecker
+144	Ï²É½½ğ±³ÈıÖº×ÄÄ¾Äñ	Himalayan Flameback
+145	½ğ±³ÈıÖº×ÄÄ¾Äñ	Common Flameback
+146	´ó½ğ±³×ÄÄ¾Äñ	Greater Flameback
+147	Öñ×ÄÄ¾Äñ	Pale-headed Woodpecker
+148	»Æ×ìÀõ×ÄÄ¾Äñ	Bay Woodpecker
+149	´ó»Ò×ÄÄ¾Äñ	Great Slaty Woodpecker
+150	´óÄâ×ÄÄ¾Äñ	Greater Barbet
+151	[°ßÍ·]ÂÌÄâ×ÄÄ¾Äñ	Lineated Barbet
+152	»ÆÎÆÄâ×ÄÄ¾Äñ	Green-eared Barbet
+153	½ğºíÄâ×ÄÄ¾Äñ	Golden-throated Barbet
+154	ºÚÃ¼Äâ×ÄÄ¾Äñ	Black-browed Barbet
+155	À¶ºíÄâ×ÄÄ¾Äñ	Blue-throated Barbet
+156	À¶¶úÄâ×ÄÄ¾Äñ	Blue-eared Barbet
+157	³àĞØÄâ×ÄÄ¾Äñ	Coppersmith Barbet
+158	¹Ú°ßÏ¬Äñ	Oriental Pied Hornbill
+159	Ë«½ÇÏ¬Äñ	Great Pied Hornbill
+160	°×ºíÏ¬Äñ	White-throated Brown hornbill
+161	×Ø¾±Ï¬Äñ	Rufous-necked Hornbill
+162	»¨¹ÚÖå¿øÏ¬Äñ	Wreathed Hornbill
+163	´÷Ê¤	Eurasian Hoopoe
+164	³ÈĞØÒ§¾é	Orange-breasted Trogon
+165	ºìÍ·Ò§¾é	Red-headed Trogon
+166	ºì¸¹Ò§¾é	Ward's Trogon
+167	À¶ĞØ·ğ·¨É®	European Roller
+168	×ØĞØ·ğ·¨É®	Indian Roller
+169	Èı±¦Äñ	Dollarbird
+170	°ßÍ·´ó´äÄñ	Blyth's Kingfisher
+171	ÆÕÍ¨´äÄñ	Common Kingfisher
+172	À¶¶ú´äÄñ	Blue-eared Kingfisher
+173	ÈıÖº´äÄñ	Three-toed Kingfisher
+174	ğÙ×ìôä´ä	Stork-billed Kingfisher
+175	³àôä´ä	Ruddy Kingfisher
+176	°×ĞØôä´ä	White-throated Kingfisher
+177	À¶ôä´ä	Black-capped Kingfisher
+178	°×Áìôä´ä	Collared Kingfisher
+179	¹ÚÓã¹·	Crested Kingfisher
+180	°ßÓã¹·	Pied Kingfisher
+181	[À¶Ğë]Ò¹·ä»¢	Blue-bearded Bee-eater
+182	ÂÌºí·ä»¢	Little Green Bee-eater
+183	À¶ºí·ä»¢	Blue-throated Bee-eater
+184	Àõºí·ä»¢	Blue-tailed Bee-eater
+185	»Æºí·ä»¢	European Bee-eater
+186	ÀõÍ··ä»¢	Chestnut-headed Bee-eater
+187	°ß³á·ïÍ·¾é	Pied Cuckoo
+188	ºì³á·ïÍ·¾é	Chestnut-winged Cuckoo
+189	Ó¥¾é	Large Hawk-Cuckoo
+190	ÆÕÍ¨Ó¥¾é	Common Hawk Cuckoo
+191	×Ø¸¹¶Å¾é	Hodgson's Hawk-Cuckoo
+192	ËÄÉù¶Å¾é	Indian Cuckoo
+193	´ó¶Å¾é	Eurasian Cuckoo
+194	ÖĞ¶Å¾é	Oriental Cuckoo
+195	Ğ¡¶Å¾é	Lesser Cuckoo
+196	Àõ°ß¶Å¾é	Cuckoo Banded Bay
+197	°ËÉù¶Å¾é	Plaintive Cuckoo
+198	´ä½ğ¾é	Asian Emerald Cuckoo
+199	×Ï½ğ¾é	Violet Cuckoo
+200	ÎÚ¾é	Drongo Cuckoo
+201	Ôë¾é	Asian Koel
+202	ÂÌ×ìµØ¾é	Green-billed Malkoha
+203	ºÖ³áÑ»¾é	Greater Coucal
+204	Ğ¡Ñ»¾é	Lesser Coucal
+205	²ÊºçğĞğÄ	Rainbow Lorikeet
+206	Ğ¡¿û»¨·ïÍ·ğĞğÄ	Yellow-crested Cockatoo
+207	¶ÌÎ²ğĞğÄ	Vernal Hanging-Parrot
+208	ºìÁìÂÌğĞğÄ	Rose-ringed Parakeet
+209	»ÒÍ·ğĞğÄ	Slaty-headed Parakeet
+210	»¨Í·ğĞğÄ	Blossom-headed Parakeet
+211	´ó×ÏĞØğĞğÄ	Derby's Parakeet
+212	ç³ĞØğĞğÄ	Red-breasted Parakeet
+213	³¤Î²ğĞğÄ	Long-tailed Parakeet
+214	¶Ì×ì½ğË¿Ñà	Himalayan Swiftlet
+215	¸êÊÏ½ğË¿Ñà	Germain's Swiftlet
+216	°×ºíÕëÎ²ÓêÑà	White-throated Needletail
+217	»ÒºíÕëÎ²ÓêÑà	Silver-backed Needletail
+218	×ØÓêÑà	Asian Palm swift
+219	¸ßÉ½ÓêÑà	Alpine Swift
+220	ÆÕÍ¨Â¥Ñà	Common Swift
+221	°×ÑüÓêÑà	Fork-tailed Swift
+222	Ğ¡°×ÑüÓêÑà	HouseSwift
+223	·ïÍ·Ê÷Ñà	Crested Treeswift
+255	ºÚ¶¥ó¡¿Úğ·	Hodgson's Frogmouth
+256	Ã«ÍÈ¶úÒ¹Ó¥	Great Eared Nightjar
+257	ÆÕÍ¨Ò¹Ó¥	Grey Nightjar
+258	Å·Ò¹Ó¥	Eurasian Nightjar
+259	°£¼°Ò¹Ó¥	Egyptian Nightjar
+260	ÖĞÑÇÒ¹Ó¥	Vaurie's Nightjar
+261	³¤Î²Ò¹Ó¥	Large-tailed Nightjar
+262	ÁÖÒ¹Ó¥	Savannah Nightjar
+263	Ô­¸ë	Rock Pigeon
+264	ÑÒ¸ë	Hill Pigeon
+265	Ñ©¸ë	Snow Pigeon
+266	Å·¸ë	Stock Pigeon
+267	ÖĞÑÇ¸ë	Yellow-eyed Pigeon
+268	°ßÎ²ÁÖ¸ë	Common Wood Pigeon
+269	µã°ßÁÖ¸ë	Speckled Wood Pigeon
+270	»ÒÁÖ¸ë	Ashy Wood Pigeon
+271	×ÏÁÖ¸ë	Purple Wood Pigeon
+272	ºÚÁÖ¸ë	Japanese Wood Pigeon
+273	Å·°ßğ¯	Turtle Dove
+274	É½°ßğ¯	Oriental Turtle Dove
+275	×Ø°ßğ¯	Palm Dove
+276	Öé¾±°ßğ¯	Spotted Dove
+277	»ğ°ßğ¯	Red Collared Dove
+278	»Ò°ßğ¯	Eurasian Collared Dove
+279	°ßÎ²¾éğ¯	Bar-tailed Cuckoo Dove
+280	ÀõºÖ¾éğ¯	Brown Cuckoo Dove
+281	×ØÍ·¾éğ¯	Little Cuckoo Dove
+282	ÂÌ³á½ğğ¯	Emerald Dove
+283	³ÈĞØÂÌğ¯	Orange-breasted Green-Pig
+284	»ÒÍ·ÂÌğ¯	Pompadour Green Pigeon
+285	ºñ×ìÂÌğ¯	Thick-billed Green Pigeon
+286	»Æ½ÅÂÌğ¯	Yellow-footed Green-Pigeo
+287	ÕëÎ²ÂÌğ¯	Pin-tailed Green Pigeon
+288	Ğ¨Î²ÂÌğ¯	Wedge-tailed Green Pigeon
+289	ºì³áÂÌğ¯	White-bellied Green-Pigeo
+290	ºì¶¥ÂÌğ¯	Whistling Green Pigeon
+291	ºÚò¤¹ûğ¯	Black-chinned Fruit Pigeon
+292	ÂÌ»Êğ¯	Green Imperial Pigeon
+293	É½»Êğ¯	Mountain Imperial Pigeon
+294	Ğ¡ğ±	Little Bustard
+295	´óğ±	Great Bustard
+296	²¨°ßğ±	McQueen's Bustard
+297	°×º×	Siberian Crane
+298	³à¾±º×	Sarus Crane
+299	°×Õíº×	White-naped Crane
+300	É³Çğº×	Sandhill Crane
+301	ËòÓğº×	Demoiselle Crane
+302	»Òº×	Common Crane
+303	°×Í·º×	Hooded Crane
+304	ºÚ¾±º×	Black-necked Crane
+305	µ¤¶¥º×	Red-crowned Crane
+306	»¨Ìï¼¦	Swinhoe's Yellow Rail
+307	ºìÍÈ°ßÑí¼¦	Red-legged Crake
+308	°×ºí°ßÑí¼¦	Slaty-legged Crake
+309	À¶ĞØÑí¼¦	Slaty-breasted Rail
+310	ÆÕÍ¨Ñí¼¦	Water Rail
+311	³¤½ÅÑí¼¦	Corn Crake
+312	ºì½Å¿à¶ñÄñ	Brown Crake
+313	°×ĞØ¿à¶ñÄñ	White-breasted Waterhen
+314	×Ø±³Ìï¼¦	Rufous-backed Crake
+315	¼§Ìï¼¦	Little Crake
+316	Ğ¡Ìï¼¦	Baillon's Crake
+317	°ßĞØÌï¼¦	Spotted Crake
+318	ºìĞØÌï¼¦	Ruddy-breasted Crake
+319	°ßĞ²Ìï¼¦	Band-bellied Crake
+320	°×Ã¼Ìï¼¦	White-Browed Crake
+321	¶­¼¦	Watercock
+322	×ÏË®¼¦	Purple Swamphen
+323	ºÚË®¼¦	Common Moorhen
+324	¹Ç¶¥¼¦	Common Coot
+325	Î÷²ØÃ«ÍÈÉ³¼¦	Tibetan Sandgrouse
+326	Ã«ÍÈÉ³¼¦	Pallas's Sandgrouse
+327	ºÚ¸¹É³¼¦	Black-bellied Sandgrouse
+328	ÇğğÖ	Eurasian Woodcock
+329	¹ÂÉ³×¶	Solitary Snipe
+330	°ÄÄÏÉ³×¶	Latham's Snipe
+331	ÁÖÉ³×¶	Wood Snipe
+332	ÕëÎ²É³×¶	Pintail Snipe
+333	´óÉ³×¶	Swinhoe's Snipe
+334	ÉÈÎ²É³×¶	Common Snipe
+335	¼§ğÖ	Jack Snipe
+336	ºÚÎ²ëóğÖ	Black-tailed Godwit
+337	°ßÎ²ëóğÖ	Bar-tailed Godwit
+338	Ğ¡è¼ğÖ	Little Curlew
+339	ÖĞè¼ğÖ	Whimbrel
+340	°×Ñüè¼ğÖ	Eurasian Curlew
+341	´óè¼ğÖ	Far Eastern Curlew
+342	º×ğÖ	Spotted Redshank
+343	ºì½ÅğÖ	Common Redshank
+344	ÔóğÖ	Marsh Sandpiper
+345	Çà½ÅğÖ	Common Greenshank
+346	Ğ¡Çà½ÅğÖ	Spotted Greenshank
+347	Ğ¡»Æ½ÅğÖ	Lesser Yellowlegs
+348	°×Ñü²İğÖ	Green Sandpiper
+349	ÁÖğÖ	Wood Sandpiper
+350	ÇÌ×ìğÖ	Terek Sandpiper
+351	í¶ğÖ	Common Sandpiper
+352	»ÒÎ²[Æ¯]ğÖ	Grey-tailed Tattler
+353	Æ¯ğÖ	Wandering Tattler
+354	·­Ê¯ğÖ	Ruddy Turnstone
+355	³¤×ìğÖ	Long-billed Dowitcher
+356	°ëõëğÖ	Asian Dowitcher
+357	´ó±õğÖ	Great Knot
+358	ºì¸¹±õğÖ	Red Knot
+359	ÈıÖºğÖ	Sanderling
+360	Î÷·½±õğÖ	Western Sandpiper
+361	É××ìğÖ	Spoon-billed Sandpiper
+362	Ğ¡±õğÖ	Little Stint
+363	ºì¾±±õğÖ	Rufous-necked Stint
+364	Çà½Å±õğÖ	Temminck's Stint
+365	³¤Öº±õğÖ	Long-toed Stint
+366	°×Ñü±õğÖ	White-Rumped Sandpiper
+367	ºÚÑü±õğÖ	Baird's Sandpiper
+368	°ßĞØ±õğÖ	Pectoral Sandpiper
+369	¼âÎ²±õğÖ	Sharp-tailed Sandpiper
+370	ÑÒ±õğÖ	Rock Sandpiper
+371	ºÚ¸¹±õğÖ	Dunlin
+372	Íä×ì±õğÖ	Curlew Sandpiper
+373	¸ßõÎğÖ	Stilt Sandpiper
+374	ÊÎĞØğÖ	Buff-Breasted Sandpiper
+375	À«×ìğÖ	Broad-billed Sandpiper
+376	Á÷ËÕğÖ	Ruff
+377	ºì¾±°êõëğÖ	Red-necked Phalarope
+378	»Ò°êõëğÖ	Red Phalarope
+379	²ÊğÖ	Greater Painted-snipe
+380	Ë®ïô	Pheasant-tailed Jacana
+381	Í­³áË®ïô	Bronze-winged Jacana
+384	òÃğÖ	Eurasian Oystercatcher
+386	ºÚ³á³¤½ÅğÖ	Black-winged Stilt
+387	·´×ìğÖ	Pied Avocet
+400	·ïÍ·Âó¼¦	Northern Lapwing
+401	¾à³áÂó¼¦	Spur-ainged Lapuiing
+402	»ÒÍ·Âó¼¦	Grey-headed Lapwing
+403	Èâ´¹Âó¼¦	Red-wattled Lapwing
+407	ºÖÔôÅ¸	Great Skua
+408	ÂóÊÏÔôÅ¸	South-Polar Skua
+409	ÖĞÔôÅ¸	Pomarine Jaeger
+410	¶ÌÎ²ÔôÅ¸	Parasitic Jaeger
+411	³¤Î²ÔôÅ¸	Long-tailed Jaeger
+412	¼ô×ìÅ¸	Indian Skimmer
+413	ºÚÎ²Å¸	Black-tailed Gull
+414	º£Å¸	Mew Gull
+415	»Ò³áÅ¸	Glaucous-winged Gull
+416	±±¼«Å¸	Glaucous Gull
+417	»Ò±³Å¸	Slaty-backed Gull
+418	ÒøÅ¸	Herring Gull
+419	»ÒÁÖÒøÅ¸	Heuglin's Gull
+420	Ö¯Å®ÒøÅ¸	Vega Gull
+421	»Æ½ÅÒøÅ¸	Yellow-legged Gull
+422	ÓæÅ¸	Pallas's Gull
+423	×ØÍ·Å¸	Brown-headed Gull
+424	ºì×ìÅ¸	Common Black-headed Gull
+425	Ï¸×ìÅ¸	Slender-billed Gull
+426	ºÚ×ìÅ¸	Saunders's Gull
+427	ÒÅÅ¸	Relict Gull
+428	Ğ¡Å¸	Little Gull
+429	Ğ¨Î²Å¸	Ross's Gull
+430	²æÎ²Å¸	Sabine's Gull
+431	ÈıÖºÅ¸	Black-legged Kittiwake
+432	Å¸×ìÔëÅ¸	Gull-billed Tern
+433	ºì×ì¾ŞÅ¸	Caspian Tern
+434	»Æ×ìºÓÑàÅ¸	River Tern
+435	Ğ¡·ïÍ·ÑàÅ¸	Lesser Crested Tern
+436	´ó·ïÍ·ÑàÅ¸	Great Crested-Tern
+437	ºÚ×ì¶Ë·ïÍ·ÑàÅ¸	Chinese Lesser Crested Tern
+438	·ÛºìÑàÅ¸	Roseate Tern
+439	ºÚÕíÑàÅ¸	Black-naped Tern
+440	ÆÕÍ¨ÑàÅ¸	Common Tern
+441	°×¶îÑàÅ¸	Little Tern
+442	ºÚ¸¹ÑàÅ¸	Black-bellied Tern
+443	°×ÑüÑàÅ¸	Aleutian Tern
+444	ºÖ³áÑàÅ¸	Bridled Tern
+445	ÎÚÑàÅ¸	Sooty Tern
+446	Ğë¸¡Å¸	Whiskered Tern
+447	°×³á¸¡Å¸	White-winged Tern
+448	ºÚ¸¡Å¸	Black Tern
+449	°×¶¥ĞşÑàÅ¸	Noddy Tern
+450	°×ĞşÅ¸	White Tern
+451	°ßº£È¸	Marbled Murrelet
+452	±â×ìº£È¸	Short-billed Guillemot
+453	¹Úº£È¸	Japanese Murrelet
+454	½Ç×ìº£È¸	Rhinoceros Auklet
+455	ğÊ	Osprey
+456	ºÖ¹Ú¾éöÀ	Jerdon's Baza
+457	ºÚ¹Ú¾éöÀ	Black Baza
+458	·ïÍ··äÓ¥	Oriental Honey-buzzard
+459	ºÚ³áğ°	Black-winged Kite
+460	ºÚğ°	Black Kite
+461	ºÚ¶úğ°	Black-eared Kite
+462	Àõğ°	Brahminy Kite
+463	°×¸¹º£µñ	White-bellied Sea Eagle
+464	Óñ´øº£µñ	Pallas's Sea-Eagle
+465	°×Î²º£µñ	White-tailed Sea Eagle
+466	»¢Í·º£µñ	Steller's Sea-eagle
+467	Óæµñ	Lesser Fish-Eagle
+468	ºúØ£ğÕ	Lammergeier
+469	°×±³Ø£ğÕ	White-rumped Vulture
+470	¸ßÉ½Ø£ğÕ	Himalayan Griffon
+471	Ø£ğÕ	Eurasian Griffon
+472	ÍºğÕ	Cinereous Vulture
+473	ºÚØ£ğÕ	Red-headed Vulture
+474	¶ÌÖºµñ	Short-toed Snake-Eagle
+475	Éßµñ	Crested Serpent-Eagle
+476	°×Í·ğÎ	Western Marsh-Harrier
+477	°×¸¹ğÎ	Eastern Marsh-Harrier
+478	°×Î²ğÎ	Northern Harrier
+479	²İÔ­ğÎ	Pallid Harrier
+480	ÈµğÎ	Pied Harrier
+481	ÎÚ»ÒğÎ	Montagu's Harrier
+482	·ïÍ·Ó¥	Crested Goshawk
+483	ºÖ¶úÓ¥	Shikra
+484	³à¸¹Ó¥	Chinese Sparrowhawk
+485	ÈÕ±¾ËÉÈ¸Ó¥	Japanese Sparrowhawk
+486	ËÉÈ¸Ó¥	Besra
+487	È¸Ó¥	Eurasian Sparrowhawk
+488	²ÔÓ¥	Northern Goshawk
+496	ÁÖµñ	Black Eagle
+497	ÎÚµñ	Greater Spotted Eagle
+498	²İÔ­µñ	Steppe Eagle
+499	°×¼çµñ	Imperial Eagle
+500	½ğµñ	Golden Eagle
+501	°×¸¹öÀµñ	Bonelli's Hawk Eagle
+502	Ñ¥öÀµñ	Booted Eagle
+503	×Ø¸¹öÀµñ	Rufous-bellied Hawk Eagle
+504	Ó¥µñ	Mountain Hawk-Eagle
+505	ºìÍÈĞ¡öÀ	Collared Falconet
+506	[°×ÍÈ]Ğ¡öÀ	Pied Falconet
+507	»Æ×¦öÀ	Lesser Kestrel
+508	ºìöÀ	Common Kestrel
+509	ºì½ÅöÀ	Red-footed Falcon
+510	°¢ÄÂ¶ûöÀ	Amur Falcon
+511	»Ò±³öÀ	Merlin
+512	ÑàöÀ	Eurasian Hobby
+513	ÃÍöÀ	Oriental Hobby
+514	ÁÔöÀ	Saker Falcon
+515	Ã¬öÀ	Gyrfalcon
+516	ÓÎöÀ	Peregrine Falcon
+517	ÄâÓÎöÀ	Barbary Falcon
+526	À¶Á³öäÄñ	Masked Booby
+527	ºì½ÅöäÄñ	Red-footed Booby
+528	ºÖöäÄñ	Brown Booby
+529	ºÚ¸¹ÉßğÃ	Darter
+530	ºÚ¾±ğµğË	Pygmy cormorant
+531	[ÆÕÍ¨]ğµğË	Great Cormorant
+532	°µÂÌ±³ğµğË	Temminck's Cormorant
+533	ºìÁ³ğµğË	Red-faced Cormorant
+534	º£ğµğË	Sea Cormorant
+535	°×ğØ	Little Egret
+536	»Æ×ì°×ğØ	Chinese Egret
+537	ÑÒğØ	Reef Heron
+538	°×¾±ºÚğØ	Pied Heron
+539	²ÔğØ	Grey Heron
+540	°×¸¹ğØ	White-Bellied Heron
+541	²İğØ	Purple Heron
+542	´ó°×ğØ	Large Egret
+543	ÖĞ°×ğØ	Intermediate Egret
+544	Å£±³ğØ	Cattle Egret
+545	³ØğØ	Chinese Pond-Heron
+546	ÂÌğØ	Striated Heron
+547	Ò¹ğØ	Black-crowned Night-Heron
+557	´ó»ğÁÒÄñ[´óºìğÙ]	Greater Flamingo
+562	°×ÅığØ	White Spoonbill
+563	ºÚÁ³ÅığØ	Black-faced Spoonbill
+564	°×ğÃğÉ	Great White Pelican
+565	¾íÓğğÃğÉ	Dalmatian Pelican
+566	°ß×ìğÃğÉ	Spot-billed philippensis
+568	ºÚğÙ	Black Stork
+569	°×ğÙ	White Stork
+570	¶«·½°×ğÙ	Oriental White Stork
+571	ÍºğÙ	Lesser Adjutant
+572	Ğ¡¾ü½¢Äñ	Great Frigatebird
+573	°×°ß¾ü½¢Äñ	Lesser Frigatebird
+574	°×¸¹¾ü½¢Äñ	Christmas Island Frigatebird
+575	ºìºíÇ±Äñ	Red-throated Loon
+576	ºÚºíÇ±Äñ	Black-throated Loon
+577	Ì«Æ½ÑóÇ±Äñ	Pacific Loon
+578	ÆÕÍ¨Ç±Äñ	Common Loon
+579	°××ìÇ±Äñ	Yellow-billed Loon
+580	±©Ñ©ğ×	Northern Fulmar
+581	¹³×ìÔ²Î²ğ×	Tahiti Petrel
+582	µã¶îÔ²Î²ğ×	Bonin Petrel
+583	´¿ºÖğ×	Bulwer's Petrel
+584	°×¶îğ×	Streaked Shearwater
+585	Ò·Î²ğ×	Wedge-tailed Shearwater
+586	Èâ×ãğ×	Flesh-Footed Shearwater
+587	»Òğ×	Sooty Shearwater
+588	¶ÌÎ²ğ×	Short-tailed Shearwater
+589	¶ÌÎ²ĞÅÌìÎÌ	Short-tailed Albatross
+590	ºÚ½ÅĞÅÌìÎÌ	Black-footed Albatross
+591	ºÚ±³ĞÅÌìÎÌ	Laysan Albatross
+592	ÑÌºÚ²æÎ²º£Ñà	Wilson's Storm-Petrel
+593	°×Ñü²æÎ²º£Ñà	Leach's Storm-Petrel
+594	ºÚ²æÎ²º£Ñà	Swinhoe's Storm-Petrel
+595	ÈÕ±¾²æÎ²º£Ñà	Matsudaira's Storm-Petrel
+596	Ë«±è°ËÉ«ğ´	Eared Pitta
+597	À¶Õí°ËÉ«ğ´	Blue-naped Pitta
+598	À¶±³°ËÉ«ğ´	Blue-rumped Pitta
+599	ÀõÍ·°ËÉ«ğ´	Rusty-naped Pitta
+600	À¶°ËÉ«ğ´	Blue Pitta
+601	ÂÌĞØ°ËÉ«ğ´	Hooded Pitta
+602	ÏÉ°ËÉ«ğ´	Fairy Pitta
+603	À¶³á°ËÉ«ğ´	Blue-winged Pitta
+604	ÒøĞØË¿¹ÚÄñ	Silver-breasted Broadbill
+605	³¤Î²À«×ìÄñ	Long-tailed Broadbill
+606	ºÍÆ½Äñ	Asian Fairy-bluebird
+607	À¶³áÒ¶ğÇ	Blue-winged Leafbird
+608	½ğ¶îÒ¶ğÇ	Golden-fronted Leafbird
+609	³È¸¹Ò¶ğÇ	Orange-bellied Leafbird
+610	»¢ÎÆ²®ÀÍ	Tiger Shrike
+611	Å£Í·²®ÀÍ	Bull-headed Shrike
+612	ºì±³²®ÀÍ	Red-backed Shrike
+613	×ØÎ²²®ÀÍ	Rufous-tailed Shrike
+614	ºìÎ²²®ÀÍ	Brown Shrike
+615	Àõ±³²®ÀÍ	Burmese Shrike
+616	×Ø±³²®ÀÍ	Long-tailed Shrike
+617	»Ò±³²®ÀÍ	Grey-backed Shrike
+618	ºÚ¶î²®ÀÍ	Lesser Grey Shrike
+619	»Ò²®ÀÍ	Northern Shrike
+620	Ğ¨Î²²®ÀÍ	Chinese Grey Shrike
+621	ËÉÑ»	Eurasian Jay
+622	±±ÔëÑ»	Siberian Jay
+623	ºÚÍ·ÔëÑ»	Sichuan Jay
+624	Ì¨ÍåÀ¶Èµ	Taiwan Blue Magpie
+625	»Æ×ìÀ¶Èµ	Yellow-billed Blue Magpie
+626	ºì×ìÀ¶Èµ	Red-billed Blue Magpie
+627	°×³áÀ¶Èµ	White-winged Magpie
+628	À¶ÂÌÈµ	Green Magpie
+629	Ó¡Ö§ÂÌÈµ	Short-tailed Magpie
+630	»ÒÏ²Èµ	Azure-winged Magpie
+631	×Ø¸¹Ê÷Èµ	Rufous Treepie
+632	»ÒÊ÷Èµ	Grey Treepie
+633	ºÚ¶îÊ÷Èµ	Collared Treepie
+634	ÅÌÎ²Ê÷Èµ	Racket-tailed Treepie
+635	ËşÎ²Ê÷Èµ	Ratchet-tailed Treepie
+636	Ï²Èµ	Black-billed Magpie
+637	ºÚÎ²µØÑ»	Mongolian Ground-Jay
+638	°×Î²µØÑ»	Xinjiang Ground-Jay
+639	ºÖ±³ÄâµØÑ»	Tibetan Ground-Jay
+640	ĞÇÑ»	Spotted Nutcracker
+641	ºì×ìÉ½Ñ»	Red-billed Chough
+642	»Æ×ìÉ½Ñ»	Yellow-billed Chough
+643	º®Ñ»	Jackdaw
+644	´ïÎÚÀïº®Ñ»	Daurian Jackdaw
+645	¼ÒÑ»	House Crow
+646	Íº±ÇÎÚÑ»	Rook
+647	Ğ¡×ìÎÚÑ»	Carrion Crow
+648	´ó×ìÎÚÑ»	Large-billed Crow
+649	´ÔÁÖÑ»	Jungle Crow
+650	°×¾±Ñ»	Collared Crow
+651	¶ÉÑ»	Common Raven
+653	½ğ»Æğ¿	Eurasian Golden-Oriole
+654	ºÚÕí»Æğ¿	Black-naped Oriole
+655	Ï¸×ì»Æğ¿	Slender-billed Oriole
+656	ºÚÍ·»Æğ¿	Black-hooded Oriole
+657	Öìğ¿	Maroon Oriole
+658	ÈµÉ«ğ¿	Silver Oriole
+661	·ÛºìÉ½½·Äñ	Rosy Minivet
+662	Ğ¡»ÒÉ½½·Äñ	Swinhoe's Minivet
+663	»ÒÉ½½·Äñ	Ashy Minivet
+664	»ÒºíÉ½½·Äñ	Grey-throated Winivet
+665	³¤Î²É½½·Äñ	Long-tailed Minivet
+666	¶Ì×ìÉ½½·Äñ	Short-billed Minivet
+667	³àºìÉ½½·Äñ	Scarlet Minivet
+672	ºÚ¾íÎ²	Black Drongo
+673	»Ò¾íÎ²	Ashy Drongo
+674	Ñ»×ì¾íÎ²	Crow-biled Drongo
+675	¹ÅÍ­É«¾íÎ²	Bronzed Drongo
+676	Ğ¡ÅÌÎ²	Lesser Racquet-tailed Drongo
+677	·¢¹Ú¾íÎ²	Spangled Drongo
+678	´óÅÌÎ²	Greater Racket-tailed Drongo
+680	×ÏÊÙ´ø[Äñ]	Japanese Paradise-Flycatcher
+681	ÊÙ´ø[Äñ]	Asian Paradise-Flycatcher
+682	ºÚ³áÈ¸ğÇ	Common Iora
+683	´óÂÌÈ¸ğÇ	Great Iora
+685	Ì«Æ½Äñ	Bohemian Waxwing
+686	Ğ¡Ì«Æ½Äñ	Japanese Waxwing
+687	ºÓÎÚ	White-throated Dipper
+688	ºÖºÓÎÚ	Brown Dipper
+689	°×±³í¶ğ´	Rufous-tailed Rock-Thrush
+690	À¶Í·í¶ğ´	Blue-capped Rock-Thrush
+691	°×ºíí¶ğ´	White-throated Rock Thrush
+692	Àõ¸¹í¶ğ´	Chestnut-bellied RockThrush
+693	À¶í¶ğ´	Blue Rock-Thrush
+694	×ÏĞ¥ğ´	Blue Whistling-Thrush
+695	Ì¨Íå×ÏĞ¥ğ´	TaiwanWhistling Thrush
+696	³ÈÍ·µØğ´	Orange-headed Thrush
+697	°×Ã¼µØğ´	Siberian Thrush
+698	¹â±³µØğ´	Plain-backed Thrush
+699	³¤Î²µØğ´	Long-tailed Thrush
+700	»¢°ßµØğ´	Scaly Thrush
+701	³¤×ìµØğ´	Dark-sided Thrush
+702	»Ò±³ğ´	Grey-backed Thrush
+703	ºÚĞØğ´	Black-breasted Thrush
+704	ÎÚ»Òğ´	Japanese Thrush
+705	°×¾±ğ´	White-collared Blackbird
+706	»Ò³áğ´	Grey-winged Blackbird
+707	ÎÚğ´	Eurasian Blackbird
+708	µºğ´	Island Thrush
+709	»ÒÍ·ğ´	Grey-headcd Thrush
+710	×Ø±³ºÚÍ·ğ´	Kessler's Thrush
+711	ºÖÍ·ğ´	Grey-sided Thrush
+712	°×Ã¼ğ´	Eyebrowed Thrush
+713	éÎğ´	Mistle Thrush
+714	°×¸¹ğ´	Pale Thrush
+715	³àĞØğ´	Brown-headed Thrush
+716	³à¾±ğ´	Dark-throated Thrush
+717	°ßğ´	Dusky Thrush
+718	Ìïğ´	Fieldfare
+719	°×Ã¼¸èğ´	Redwing
+720	Å·¸èğ´	Song Thrush
+721	±¦ĞË¸èğ´	Chinese Thrush
+722	Àõ±³¶Ì³áğ´	Gould's Shortwing
+723	Ğâ¸¹¶Ì³áğ´	Rusty-bellied Shortwing
+724	°×ºí¶Ì³áğ´	Lesser Shortwing
+725	À¶¶Ì³áğ´	White-browed Shortwing
+760	Å·ÑÇğ¶	European Robin
+761	[ÈÕ±¾]¸èğ¶	Japanese Robin
+762	ÁğÇò¸èğ¶	Ryukyu Robin
+763	ºìÎ²¸èğ¶	Rufous-tailed Robin
+764	ĞÂ½®¸èğ¶	Common Nightingale
+765	ºìµãò¤,ºìºí¸èğ¶	Siberian Rubythroat
+766	ºÚĞØ¸èğ¶	White-tailed Rubythroat
+767	À¶ºí¸èğ¶[À¶µãò¤]	Bluethroat
+768	×ØÍ·¸èğ¶	Rufous-headed Robin
+769	ºÚºí¸èğ¶	Blackthroated
+770	½ğĞØ¸èğ¶	Firethroat
+771	Àõ¸¹¸èğ¶	Indian Blue Robin
+772	À¶¸èğ¶	Siberian Blue Robin
+773	ºìĞ²À¶Î²ğ¶	Orange-flanked Bush-Robin
+774	½ğÉ«ÁÖğ¶	Golden Bush-Robin
+775	°×Ã¼ÁÖğ¶	White-browed Bush-Robin
+776	×Ø¸¹ÁÖğ¶	Rufous-breasted Bush Robi
+777	Ì¨ÍåÁÖğ¶	Collared Bush-Robin
+778	Èµğ¶	Oriental Magpie-Robin
+779	°×ÑüÈµğ¶	White-rumped Shama
+780	ºØÀ¼É½ºìÎ²ğ¶	Ala Shan Redstart
+781	ºì±³ºìÎ²ğ¶	Rufous-backed Redstart
+782	À¶Í·ºìÎ²ğ¶	Blue-capped Redstart
+783	ô÷ºìÎ²ğ¶	Black Redstart
+784	Å·ÑÇºìÎ²ğ¶	Common Redstart
+785	ºÚºíºìÎ²ğ¶	Hodgson's Redstart
+786	°×ºíºìÎ²ğ¶	White-throated Redstart
+787	±±ºìÎ²ğ¶	Daurian Redstart
+788	ºì¸¹ºìÎ²ğ¶	White-winged Redstart
+789	À¶¶îºìÎ²ğ¶	Blue-fronted Redstart
+790	°×¶¥Ïªğ¶	White-capped Water-Redstart
+791	ºìÎ²Ë®ğ¶	Plumbeous Water-Redstart
+792	°×¸¹¶Ì³áğ¶	White-bellied Redstart
+793	°×Î²À¶[µØ]ğ¶	White-tailed Robin
+794	À¶¶î[³¤½Å]µØğ¶	Blue-fronted Robin
+795	À¶´ó³áğ¶	Grandala
+796	Ğ¡ÑàÎ²	Little Forktail
+797	ºÚ±³ÑàÎ²	Black-backed Forktail
+798	»Ò±³ÑàÎ²	Slaty-backed Forktail
+799	°×¹ÚÑàÎ²	White-crowned Forktail
+800	°ß±³ÑàÎ²	Spotted Forktail
+801	×Ï¿í×ìğ´	Purple Cochoa
+802	ÂÌ¿í×ìğ´	Green Cochoa
+813	»ÒÍ·é£Äñ	Chestnut-tailed Starling
+814	ºÚ¹Úé£Äñ	Brahminy Starling
+815	Ë¿¹âé£Äñ	Silky stanling
+816	±±é£Äñ	Purple-backed Starling
+817	×Ï±³é£Äñ	Chestnut-cheeked Starling
+818	»Ò±³é£Äñ	White-shouldered Starling
+819	·Ûºìé£Äñ	Rosy Starling
+820	×Ï³áé£Äñ	Common Starling
+821	»Òé£Äñ	White-cheeked Starling
+822	°ßé£Äñ	Asian Pied Starling
+823	ºÚÁìé£Äñ	Black-collared Starling
+824	ºì×ìé£Äñ	Vinous-breasted Starling
+825	¼Ò°Ë¸ç	Common Myna
+826	»Ò±³°¶°Ë¸ç	Bank Myna
+827	ÁÖ°Ë¸ç	White-vented Myna
+828	°×Áì°Ë¸ç	Collared Myna
+829	°Ë¸ç	Crested Myna
+830	½ğ¹ÚÊ÷°Ë¸ç	Golden-crested Myna
+831	ğÓ¸ç	Hill Myna
+843	ºì³áĞı±ÚÈ¸	Wallcreeper
+844	ĞıÄ¾È¸	Eurasian Tree-Creeper
+845	¸ßÉ½ĞıÄ¾È¸	Bar-tailed Tree-Creeper
+846	Ğâºì¸¹ĞıÄ¾È¸	Rusty-flanked Treecreeper
+847	ºÖºíĞıÄ¾È¸	Brown-throated Treecreeper
+848	ğÔğÓ	Wren
+849	°×¹ÚÅÊÈ¸	White-erowned penduline Tit
+850	ÖĞ»ªÅÊÈ¸	Chinese Penduline Tit
+851	»ğ¹ÚÈ¸	Fire-capped Tit
+852	ÕÓÔóÉ½È¸	Marsh Tit
+853	ºÖÍ·É½È¸	Willow Tit
+854	°×Ã¼É½È¸	White-browed Tit
+855	ºì¸¹É½È¸	Rusty-breasted Tit
+856	Î÷²®ÀûÑÇÉ½È¸	Siberian Tit
+857	×ØÕíÉ½È¸	Rufous-naped Tit
+858	ºÚ¹ÚÉ½È¸	Rufous-vented Tit
+859	ÃºÉ½È¸	Coal Tit
+860	»Æ¸¹É½È¸	Yellow-bellied Tit
+861	ºÖ¹ÚÉ½È¸	Grey-crested Tit
+862	´óÉ½È¸	Great Tit
+863	Î÷ÓòÉ½È¸	Turkestan Tit
+864	ÂÌ±³É½È¸	Green-backed Tit
+865	»Æ¼ÕÉ½È¸	Yellow-cheeked Tit
+866	Ì¨Íå»ÆÉ½È¸	Yellow Tit
+867	»ÒÀ¶É½È¸	Azure Tit
+868	»ÆĞØÉ½È¸	Yellow-breasted Tit
+869	ÔÓÉ«É½È¸	Varied Tit
+870	»ÆÃ¼ÁÖÈ¸	Yellow-browed Tit
+871	ÃáÈ¸	Sultan Tit
+872	Òøºí[³¤Î²]É½È¸	Long-tailed Tit
+873	ºìÍ·[³¤Î²]É½È¸	Black-throated Tit
+874	ºÚÍ·[³¤Î²]É½È¸	Rufous-fronted Tit
+875	ºÚÃ¼[³¤Î²]É½È¸	Black-browed Tit
+876	ÒøÁ³[³¤Î²]É½È¸	Sooty Tit
+877	°×ÑÛºÓÑà	White-eyed River Martin
+878	ÑÂÉ³Ñà	Sand Martin
+879	ºÖºíÉ³Ñà	Plain Martin
+880	ÑÒÑà	Eurasian Crag-Martin
+881	´¿É«ÑÒÑà	Dusky Crag-Martin
+882	¼ÒÑà	Barn Swallow
+883	Ñó°ßÑà	Pacific Swallow
+884	½ğÑüÑà	Red-rumped Swallow
+885	°ßÑüÑà	Striated Swallow
+886	[°×¸¹]Ã«½ÅÑà	Northern House-Martin
+887	ÑÌ¸¹Ã«½ÅÑà	Asian House-Martin
+888	ºÚºíÃ«½ÅÑà	Nepal House-Martin
+889	´÷¾Õ	Goldcrest
+890	Ì¨Íå´÷¾Õ	Flamecrest
+891	·ïÍ·È¸×ìğÇ	Crested Finchbill
+892	ÁìÈ¸×ìğÇ	Collared Finchbill
+893	×İÎÆÂÌğÇ	Striated Bulbul
+894	ºÚÍ·ğÇ	Black-headed Bulbul
+895	ºÚ¹Ú»ÆğÇ	Black-crested Bulbul
+896	ºì¶úğÇ	Red-whiskered Bulbul
+897	»ÆÍÎğÇ	Brown-breasted Bulbul
+898	°×Í·ğÇ	Light-vented Bulbul
+899	Ì¨ÍåğÇ	Tavaau Bulbul
+900	°×¼ÕğÇ	Himalayan Bulbul
+901	ºÚºíºìÍÎğÇ	Red-vented Bulbul
+902	°×ºíºìÍÎğÇ	Sooty-headed Bulbul
+903	ÎÆºíğÇ	Stripe-throated Bulbul
+904	»ÆÂÌğÇ	Flavescent Bulbul
+905	»Æ¸¹¹ÚğÇ	Yellow-bcllied Bulbul
+906	°×ºí¹ÚğÇ	White claroated Bulbul
+907	»ÒÑÛ¶Ì½ÅğÇ	Grey-eyed Bulbul
+908	Àõ¶ú[¶Ì½Å]ğÇ	Brown-eared Bulbul
+909	»Ò¶Ì½ÅğÇ	Ashy Bulbul
+910	Àõ±³¶Ì½ÅğÇ	Chestnut Bulbul
+911	ÂÌ³á¶Ì½ÅğÇ	Mountain Bulbul
+912	ºÚ[¶Ì½Å]ğÇ	Madagascar Bulbul
+913	×ØÉÈÎ²İº	Zitting Cisticola
+914	½ğÍ·ÉÈÎ²İº	Gololeu-tuaded Fautail Walolcr
+915	É½ğÌ	White-browed Chinese Warb
+916	É½ğÔİº	Striated Prinia
+917	ºÖÉ½ğÔİº	Brown Prinia
+918	ºÚºíÉ½ğÔİº	Hill Prinia
+919	°µÃáğÔİº	Rufescent Prinia
+920	»ÒĞØğÔİº	Grey-breasted Prinia
+921	»Æ¸¹ğÔİº	Yellow-bellied Prinia
+922	ºÖÍ·ğÔİº	Plain Prinia
+923	ºìĞ²ĞåÑÛÄñ	Chestnut-flanked White-ey
+924	»Ò¸¹ĞåÑÛÄñ	Oriental White-eye
+925	°µÂÌĞåÑÛÄñ	Japanese White-eye
+926	ÀõÍ·µØİº	Chestnut-headed Tesia
+927	½ğ¹ÚµØİº	Slaty-bellied Tesia
+928	»Ò¸¹µØİº	Grey-bellied Tesia
+929	ÁÛÍ·Ê÷İº	Asian Stubtail
+930	µ­½ÅÊ÷İº	Pale-footed Bush-Warbler
+931	Ô¶¶«Ê÷İº	Manchurian Bush Warbler
+932	ÈÕ±¾Ê÷İº	Japanese Bush-Warbler
+933	Ç¿½ÅÊ÷İº	Brownish-flanked Bush-War
+934	´óÊ÷İº	Chestnut-crowned Bush-War
+935	ÒìÉ«Ê÷İº	Aberrant Bush-Warbler
+936	»Æ¸¹Ê÷İº	Yellowish-bellied Bush Warbler
+937	×Ø¶¥Ê÷İº	Grey-sided Bush-Warbler
+938	¿íÎ²Ê÷İº	Cetti's Warbler
+939	°ßĞØ¶Ì³áİº	Spotted Bush-Warbler
+940	¾Ş×ì¶Ì³áİº	Long-billed Bush-Warbler
+941	ÖĞ»ª¶Ì³áİº	Chinese BushWarbler
+942	×ØºÖ¶Ì³áİº	Brown Bush-Warbler
+943	¸ßÉ½¶Ì³áİº	Russet Bush-Warbler
+944	Ã¬°ß»Èİº	Lanceolated Warbler
+945	ºÚ°ß»Èİº	Grasshopper Warbler
+946	Ğ¡»Èİº	Rusty-rumped Warbler
+947	±±»Èİº	Middendorff's Warbler
+948	Ê·ÊÏ»Èİº	Pleske's Warbler
+949	ğ¶»Èİº	Savi's Warbler
+950	²ÔÃ¼»Èİº	Gray's Warbler
+951	°ß±³´óÎ²İº	Stuak-bachel Suamp Wabler
+952	Ë®ÆÑÎ­İº	Sedge Warbler
+953	Ï¸ÎÆÎ­İº	Streaked Reed-Warbler
+954	ºÚÃ¼Î­İº	Black-browed Reed Warbler
+955	µ¾ÌïÎ­İº	Paddyfield Warbler
+956	Ô¶¶«Î­İº	Manchurian Reed Warbler
+957	¶Û³á[µ¾Ìï]Î­İº	Blunt-winged Warbler
+958	Â«Î­İº	Eurasian Reed-Warbler
+959	²¼ÊÏÎ­İº	Blyth's Reed Warbler
+960	´óÎ­İº	Great Reed-Warbler
+961	¶«·½´óÎ­İº	Oriental Reed Warbler
+962	Ôë´óÎ­İº	Clamorous Reed-Warbler
+963	ºñ×ìÎ­İº	Thick-billed Warbler
+964	Ñ¥Àéİº	Booted Warbler
+965	ÈüÊÏÀéİº	Sykes's Warbler
+966	²İÂÌÀéİº	Olivaceous Warbler
+967	½ğÍ··ìÒ¶İº	Mountain Tailorbird
+968	³¤Î²·ìÒ¶İº	Common Tailorbird
+969	ºÚºí·ìÒ¶İº	Dark-necked Tailorbird
+970	»¨²ÊÈ¸İº	White-browed Tit-Warbler
+971	·ïÍ·È¸İº	Crested Tit Warbler
+972	ß´Õ¦Áøİº	Common Chiffchaff
+973	¶«·½ß´Õ¦Áøİº	Mountain Chiffchaff
+974	ÁÖÁøİº	Wood Warbler
+975	ºÖÁøİº	Dusky Warbler
+976	ÑÌÁøİº	Smoky Warbler
+977	»Æ¸¹Áøİº	Tickell's Leaf Warbler
+978	×Ø¸¹Áøİº	Buff-throated Warbler
+979	»ÒÁøİº	Sulphur-bellied Warbler
+980	×ØÃ¼Áøİº	Yellow-streaked Warbler
+981	¾Ş×ìÁøİº	Radde's Warbler
+982	³È°ß³áÁøİº	Orange-barred Warbler
+983	»ÒºíÁøİº	Ashy-throated Warbler
+984	»ÆÑüÁøİº	Yellow-rumped Warbler
+985	µ­»ÆÑüÁøİº	Lemon-rumped Warbler
+986	¸ÊËà[»ÆÑü]Áøİº	Gansu Leaf Warbler
+987	ËÄ´¨Áøİº	Sichuan Leaf-Warbler
+988	»ÆÃ¼Áøİº	Yellow-browed Warbler
+989	µ­Ã¼Áøİº	Hume's Warbler
+990	¼«±±Áøİº	Arctic Warbler
+991	°µÂÌÁøİº	Greenish Warbler
+992	Ë«°ßÂÌÁøİº	Two-barredWarbler
+993	»Ò½ÅÁøİº	Pale-legged Warbler
+994	ÎÚ×ìÁøİº	Large-billed Warbler
+995	ÃáÁøİº	Eastern Crowned Warbler
+996	¶ëÃ¼Áøİº	Emei Leaf Warbler
+997	¹ÚÎÆÁøİº	Blyth's Leaf-Warbler
+998	°×°ßÎ²Áøİº	White-tailed Leaf-Warbler
+999	º£ÄÏÁøİº	Hainan Leaf Warbler
+1000	»ÆĞØÁøİº	Yellow-vented Warbler
+1001	ºÚÃ¼Áøİº	Sulphur-breasted Warbler
+1011	ÕÓÔó´óÎ²İº	Striated Grassbird
+1012	´ó²İİº	Rufous-rumped Grassbird
+1013	ºÚÁ³ÔëğÌ	Masked Laughingthrush
+1014	°×ºíÔëğÌ	White-throated Laughingth
+1015	°×¹ÚÔëğÌ	White-crested Laughingthr
+1016	Ğ¡ºÚÁìÔëğÌ	Lesser Necklaced Laughingthrus
+1017	ºÚÁìÔëğÌ	Greater Necklaced Laughingthru
+1018	ÌõÎÆÔëğÌ	Striated Laughingthrush
+1019	°×¾±ÔëğÌ	White-necked Laughingthrush
+1020	ºÖĞØÔëğÌ	Grey Laughingthrush
+1021	Àõ¾±ÔëğÌ	Rufous-necked Laughingthrush
+1022	ºÚºíÔëğÌ	Black-throated Laughingthrush
+1023	»ÆºíÔëğÌ	Yellow-throated Laughingthrush
+1024	ÀõÍÎÔëğÌ	Rufous-vented Laughingthrush
+1025	É½ÔëğÌ	Plain Laughingthrush
+1026	ºÚ¶îÉ½ÔëğÌ	Sukatschev's Laughing thrush
+1027	»Ò³áÔëğÌ	Moustached Laughingthrush
+1028	×Øò¤ÔëğÌ	Rufous-chinned Laughingthrush
+1029	°ß±³ÔëğÌ	Barred Laughingthrush
+1030	°×µãğÌ	White-speckled Laughingthrush
+1031	´óÔëğÌ	Giant Laughingthrush
+1032	ÑÛÎÆÔëğÌ	Spotted Laughingthrush
+1033	»ÒĞ²ÔëğÌ	Grey-sided Laughingthrush
+1034	×ØÔëğÌ	Rusty Laughingthrush
+1035	°ßĞØÔëğÌ	Spot-breasted Laughingthrush
+1036	»­Ã¼	Hwamei
+1037	°×¼ÕÔëğÌ	White-browed Laughingthrush
+1038	Ï¸ÎÆÔëğÌ	Streaked Laughingthrush
+1039	À¶³áÔëğÌ	Blue-winged Laughingthrush
+1040	´¿É«ÔëğÌ	Scaly Laughingthrush
+1041	³È³áÔëğÌ	Elliot's Laughingthrush
+1042	ÔÓÉ«ÔëğÌ	Variegated Laughingthrush
+1043	»Ò¸¹ÔëğÌ	Brown-cheeked Laughingthrush
+1044	ºÚ¶¥ÔëğÌ	Black-faced Laughingthrush
+1045	ÓñÉ½ÔëğÌ	White-whiskered Laughingthrush
+1046	ºìÍ·ÔëğÌ	Chestnut-crowned Laughingthrus
+1047	ÀöÉ«ÔëğÌ	Red-winged Laughingthrush
+1048	³àÎ²ÔëğÌ	Red-tailed Laughingthrush
+1049	ºì³áŞ´ğÌ	Red-faced Liocichla
+1050	»ÒĞØŞ´ğÌ	Omei Shan Liocichla
+1051	»ÆğëŞ´ğÌ	Steere's Liocichla
+1052	×ØĞØÑÅğÌ	Buff-breasted Babbler
+1053	°×¸¹ÓÄğÌ	Spot-throated Babbler
+1054	×ØÍ·ÓÄğÌ	Puff-throated Babbler
+1055	³¤×ì¹³×ìğÌ	Large Scimitar-Babbler
+1056	°ßĞØ¹³×ìğÌ	Spot-breated Scimitar Babbler
+1057	ĞâÁ³¹³×ìğÌ	Rusty-cheeked Scimitar-Ba
+1058	»ÒÍ·¹³×ìğÌ	White-browed Scimitar Babbler
+1059	×Ø¾±¹³×ìğÌ	Streak-breasted Scimitar Babbler
+1060	×ØÍ·¹³×ìğÌ	Red-billed Scimitar-Babbl
+1061	ºì×ì¹³×ìğÌ	Coral-billed Scimitar-Bab
+1062	½£×ìğÌ	Slender-billed Scimitar-B
+1063	³¤×ìğÓğÌ	Long-billed Wren-babbler
+1064	»ÒÑÒğÔğÌ	Limestone Wren-Babbler
+1065	¶ÌÎ²ğÔğÌ	Streaked Wren-Babbler
+1066	ÎÆĞØğÔğÌ	Eyebrowed Wren-Babbler
+1067	ÁÛĞØğÔğÌ	Scaly-breasted Wren-Babbl
+1068	Ğ¡ÁÛ[ĞØ]ğÔğÌ	Pygmy Wren-Babbler
+1069	¶ÌÎ²ğÓğÌ	Rufous-throated Wren Babbler
+1070	ĞâºíğÓğÌ	Rusty-throated Wren Babbler
+1071	°ß³áğÓğÌ	Bar-winged Wren-Babbler
+1072	ÀöĞÇğÓğÌ	Spotted Wren Babbler
+1073	³¤Î²ğÓğÌ	Long-tailed Wren-Babbler
+1074	Ğ¨Í·ğÓğÌ	Wedge-billed Wren Babbler
+1075	ºì¶îËëğÌ	Bufous-fronted Babbler
+1076	ºìÍ·ËëğÌ	Rufous-capped Babbler
+1077	½ğÍ·ËëğÌ	Golden Babbler
+1078	ºÚÍ·ËëğÌ	Grey-throated Babbler
+1079	°ß¾±ËëğÌ	Spot-necked Babbler
+1080	ÎÆĞØ¾ŞğÌ	Striped Tit-Babbler
+1081	ºì¶¥ğÌ	Chestnut-capped Babbler
+1082	½ğÑÛğÌÈ¸	Yellow-eyed Babbler
+1083	±¦ĞËğÌÈ¸	Rufous-tailed Babbler
+1084	Ã¬ÎÆ²İğÌ	Chinese Babax
+1085	´ó²İğÌ	Giant Babax
+1086	×Ø²İğÌ	Tibetan Babax
+1087	Òø¶úÏàË¼Äñ	Silver-eared Mesia
+1088	ºì×ìÏàË¼Äñ	Red-billed Leiothrix
+1089	°ßĞ²¼§ğÌ	Cutia
+1096	Ğâ¶î°ß³áğÌ	Rusty-fronted Barwing
+1097	°×¿ô°ß³áğÌ	Spectacled Barwing
+1098	ÎÆÍ·°ß³áğÌ	Hoary-throated Barwing
+1099	ÎÆĞØ°ß³áğÌ	Streak-throated Barwing
+1100	»ÒÍ·°ß³áğÌ	Streaked Barwing
+1101	Ì¨Íå°ß³áğÌ	Formosan Barwing
+1102	À¶³áÏ£ğÌ	Blue-winged Minla
+1103	°ßºíÏ£ğÌ	Chestnut-tailed Minla
+1104	»ğÎ²Ï£ğÌ	Red-tailed Minla
+1105	½ğĞØÈ¸ğÌ	Golden-breasted Fulvetta
+1106	½ğ¶îÈ¸ğÌ	Gold-fronted Fulvetta
+1107	»ÆºíÈ¸ğÌ	Yellow-throated Fulvetta
+1108	ÀõÍ·È¸ğÌ	Rufous-winged Fulvetta
+1109	°×Ã¼È¸ğÌ	White-browed Fulvetta
+1110	¸ßÉ½È¸ğÌ	Chinese Fulvetta
+1111	×ØÍ·È¸ğÌ	Spectacled Fulvetta
+1112	ºÖÍ·È¸ğÌ	Streak-throated Fulvetta
+1113	Â·µÂÈ¸ğÌ	Ludlow's Fulvetta
+1114	×ØºíÈ¸ğÌ	Rufous-throated Fulvetta
+1115	ºÖ¶¥È¸ğÌ	Dusky Fulvetta
+1116	ºÖĞ²È¸ğÌ	Rusty-capped Fulvetta
+1117	ºÖÁ³È¸ğÌ	Brown-cheeked Fulvetta
+1118	»Ò¿ôÈ¸ğÌ	Grey-cheeked Fulvetta
+1119	°×¿ôÈ¸ğÌ	Nepal Fulvetta
+1120	Àõ±³ÆæğÌ	Rufous-backed Sibia
+1121	ºÚ¶¥ÆæğÌ	Rufous Sibia
+1122	»ÒÆæğÌ	Grey Sibia
+1123	ºÚÍ·ÆæğÌ	Rufous Sibia
+1124	°×¶úÆæğÌ	White-eared Sibia
+1125	ÀöÉ«ÆæğÌ	Beautiful Sibia
+1126	³¤Î²ÆæğÌ	Long-tailed Sibia
+1127	Àõ¶ú·ïğÌ	Striated Yuhina
+1128	°×Ïî·ïğÌ	White-naped Yuhina
+1129	»Æ¾±·ïğÌ	Whiskered Yuhina
+1130	ÎÆºí·ïğÌ	Stripe-throated Yuhina
+1131	°×Áì·ïğÌ	White-collared Yuhina
+1132	×Ø¸Ø·ïğÌ	Rufous-vented Yuhina
+1133	ºÖÍ··ïğÌ	Taiwan Yuhina
+1134	ºÚ¶î·ïğÌ	Black-chinned Yuhina
+1135	°×¸¹·ïğÌ	White-bellied Yuhina
+1136	»ğÎ²ÂÌğÌ	Fire-tailed Myzornis
+1137	ÎÄĞëÈ¸	Bearded Parrotbill
+1138	ºì×ìÑ»È¸	Great Parrotbill
+1139	ÈıÖºÑ»È¸	Three-toed Parrotbill
+1140	ºÖÑ»È¸	Brown Parrotbill
+1141	»ÒÍ·Ñ»È¸	Grey-headed Parrotbill
+1142	°ßĞØÑ»È¸	Black-breasted Parrotbill
+1143	µãĞØÑ»È¸	Spot-breasted Parrotbill
+1144	°×¿ôÑ»È¸	Spectacled Parrotbill
+1145	×ØÍ·Ñ»È¸	Vinous-throated Parrotbill
+1146	ºÖ³áÑ»È¸	Brown-winged Parrotbill
+1147	»ÒºíÑ»È¸	Ashy-throated Parrotbill
+1148	°µÉ«Ñ»È¸	Grey-hooded Parrotbill
+1149	»Ò¹ÚÑ»È¸	Rusty-throated Parrotbill
+1150	»Æ¶îÑ»È¸	Fulvous Parrotbill
+1151	³È¶îÑ»È¸	Black-throated Parrotbill
+1152	½ğÉ«Ñ»È¸	Golden Parrotbill
+1153	¶ÌÎ²Ñ»È¸	Short-tailed Parrotbill
+1154	ºÚÃ¼Ñ»È¸	Lesser Rufous-headed Parrotbil
+1155	ºìÍ·Ñ»È¸	Rufous-headed Parrotbill
+1156	Õğµ©Ñ»È¸	Reed Parrotbill
+1157	»Ò[°×ºí]ÁÖİº	Srenter Whitethroat
+1158	°×ºíÁÖİº	Lesser Whitethroat
+1159	É³°×ºíÁÖİº	Small Whitethroat
+1160	Ä®µØÁÖİº	Desert Warbler
+1161	ºá°ßÁÖİº	Barred Warbler
+1162	¸è°ÙÁé	Singing Bushlark
+1163	¶ş°ß°ÙÁé	Bimaculated Lark
+1164	³¤×ì°ÙÁé	Tibetan Lark
+1165	[ÃÉ¹Å]°ÙÁé	Mongolian Lark
+1166	°×³á°ÙÁé	White-winged Lark
+1167	ºÚ°ÙÁé	Black Lark
+1168	¶ÌÖº°ÙÁé	Red-capped Lark
+1169	Ï¸×ì¶ÌÖº°ÙÁé	Hume's Short-toed Lark
+1170	[ÑÇÖŞ]¶ÌÖº°ÙÁé	Asian Short-toed Lark
+1171	·ïÍ·°ÙÁé	Crested Lark
+1172	ÔÆÈ¸	Eurasian Skylark
+1173	ÈÕ±¾ÔÆÈ¸	Japanese Skylark
+1174	Ğ¡ÔÆÈ¸	Oriental Skylark
+1175	½Ç°ÙÁé	Horned Lark
+1176	ºñ×ì×Ä»¨Äñ	Thick-billed Flowerpecker
+1177	»Æ¸Ø×Ä»¨Äñ	Yellow-vented Flowerpecker
+1178	»Æ¸¹×Ä»¨Äñ	Yellow-bellied Flowerpecker
+1179	´¿É«×Ä»¨Äñ	Plain Flowerpecker
+1180	ºìĞØ×Ä»¨Äñ	Fire-breasted Flowerpecker
+1181	Öì±³×Ä»¨Äñ	Scarlet-backed Flowerpecker
+1182	×Ï¼ÕÖ±×ìÌ«ÑôÄñ	Ruby-cheeked Sunbird
+1183	À¶Õí»¨ÃÛÄñ	Purple-naped Sunbird
+1184	»Æ¸¹»¨ÃÛÄñ	Olive-backed Sunbird
+1185	×ÏÉ«»¨ÃÛÄñ	Purple Sunbird
+1186	À¶ºíÌ«ÑôÄñ	Mrs Gould's Sunbird
+1187	ÂÌºíÌ«ÑôÄñ	Green-thriated Sunbird
+1188	²æÎ²Ì«ÑôÄñ	Fork-tailed Sunbird
+1189	ºÚĞØÌ«ÑôÄñ	Black-throated Sunbird
+1190	»ÆÑüÌ«ÑôÄñ	Crimson Sunbird
+1191	»ğÎ²Ì«ÑôÄñ	Fire-tailed Sunbird
+1192	³¤×ì²¶ÖëÄñ	Little Spiderhunter
+1193	ÎÆ±³²¶ÖëÄñ	Streaked Spiderhunter
+1194	ºÚ¶¥ÂéÈ¸	Saxaul Sparrow
+1195	¼ÒÂéÈ¸	House Sparrow
+1196	ºÚĞØÂéÈ¸	Spanish Sparrow
+1197	É½ÂéÈ¸	Russet Sparrow
+1198	[Ê÷]ÂéÈ¸	Eurasian Tree Sparrow
+1199	Ê¯È¸	Rock Sparrow
+1200	°×°ß³áÑ©È¸	White-winged Snowfinch
+1201	ºÖ³áÑ©È¸	Tibetan Snowfinch
+1202	°×ÑüÑ©È¸	White-rumped Snowfinch
+1203	ºÚºíÑ©È¸	Small Snowfinch
+1204	×Ø¾±Ñ©È¸	Rufous-necked Snowfinch
+1205	×Ø±³Ñ©È¸	Plain-backed Snowfinch
+1213	ÀíÊÏğÒ	Richard's Pipit
+1214	ÌïğÒ	Paddyfield Pipit
+1215	Æ½Ô­ğÒ	Tawny Pipit
+1216	²¼À³ÊÏğÒ	Blyth's Pipit
+1217	ÁÖğÒ	Tree Pipit
+1218	Ê÷ğÒ	Orienfnl Tree Pipit
+1219	±±ğÒ	Pechora Pipit
+1220	²İµØğÒ	Meadow Pipit
+1221	ºìºíğÒ	Red-throated Pipit
+1222	·ÛºìĞØğÒ	Rosy Pipit
+1223	Ë®ğÒ	Water Pipit
+1224	»Æ¸¹ğÒ	Buff-bellied Pipit
+1225	É½ğÒ	Upland Pipit
+1226	ÁìÑÒğÒ	Cllared Accentor
+1227	¸ßÔ­ÑÒğÒ	Rufous-streaked Accentor
+1228	ğ¶ÑÒğÒ	Robin Accentor
+1229	×ØĞØÑÒğÒ	Rufous-breasted Accentor
+1230	×ØÃ¼É½ÑÒğÒ	Siberian Accentor
+1231	ºÖÑÒğÒ	Brown Accentor
+1232	ºÚºíÑÒğÒ	Black-throated Accentor
+1233	ºØÀ¼É½ÑÒğÒ	Mongolian Accentor
+1234	Àõ±³ÑÒğÒ	Maroon-backed Accentor
+1235	ºÚºíÖ¯²¼Äñ	Black-breasted Weaver
+1236	ÎÆĞØÖ¯²¼Äñ	Streaked Weaver
+1237	»ÆĞØÖ¯²¼Äñ	Baya Weaver
+1238	[ºì]Ã·»¨È¸	Red Avadavat
+1239	°×ÑüÎÄÄñ	White-rumped Munia
+1240	°ßÎÄÄñ	Scaly-breasted Munia
+1241	Àõ¸¹ÎÄÄñ	Black-headed Munia
+1242	ºÌÈ¸	Java Sparrow
+1243	²ÔÍ·ÑàÈ¸	Chaffinch
+1244	ÑàÈ¸	Brambling
+1245	½ğ¶îË¿È¸	Fire-fronted Serin
+1246	½ğ³á[È¸]	Grey-capped Greenfinch
+1247	¸ßÉ½½ğ³á[È¸]	Yellow-breasted Greenfinch
+1248	ºÚÍ·½ğ³á[È¸]	Black-headed Greenfinch
+1249	»ÆÈ¸	Eurasian Siskin
+1250	²Ø»ÆÈ¸	Tibetan Serin
+1251	ºì¶î½ğ³á[È¸]	European Goldfinch
+1252	¼«±±Öì¶¥È¸	Hoary Redpoll
+1253	°×ÑüÖì¶¥È¸	Common Redpoll
+1254	»Æ×ìÖì¶¥È¸	Twite
+1255	³àĞØÖì¶¥È¸	Eurasian Linnet
+1256	ÁÖÁëÈ¸	Plain Mountain-Finch
+1257	¸ßÉ½ÁëÈ¸	Brandt's Mountain Finch
+1258	ºÖÍ·ÁëÈ¸	Sillem's Mountain Finch
+1259	·Ûºì¸¹ÁëÈ¸	Asian Rosy-Finch
+1260	ºìÃ¼½ğ³áÈ¸	Spectacled Finch
+1261	³à³áÉ³È¸	Crimson-winged Finch
+1262	ÃÉ¹ÅÉ³È¸	Mongolian Finch
+1263	¾Ş×ìÉ³È¸	Desert Finch
+1264	³¤Î²È¸	Long-tailed Rosefinch
+1265	³àÖìÈ¸	Crimson Rosefinch
+1266	°µĞØÖìÈ¸	Dark-breasted Rosefinch
+1267	ÆÕÍ¨ÖìÈ¸	Common Rosefinch
+1268	ºìÃ¼ÖìÈ¸	Beautiful Rosefinch
+1269	ÊïºìÖìÈ¸	Pink-rumped Rosefinch
+1270	ÃµºìÃ¼ÖìÈ¸	Pink-browed Rosefinch
+1271	¾ÆºìÖìÈ¸	Vinaceous Rosefinch
+1272	×ØÖìÈ¸	Dark-rumped Rosefinch
+1273	É³É«ÖìÈ¸	Pale Rosefinch
+1274	±±ÖìÈ¸	Pallas's Rosefinch
+1275	°ß³áÖìÈ¸	Three-banded Rosefinch
+1276	µã³áÖìÈ¸	Spot-winged Rosefinch
+1277	°×Ã¼ÖìÈ¸	White-browed Rosefinch
+1278	ºìÑüÖìÈ¸	Red-mantled Rosefinch
+1279	Äâ´óÖìÈ¸	Streaked Rosefinch
+1280	´óÖìÈ¸	Great Rosefinch
+1281	ºìĞØÖìÈ¸	Red-fronted Rosefinch
+1282	²ØÈ¸	Tibetan Rosefinch
+1283	ËÉÈ¸	Pine Grosbeak
+1284	ºìÃ¼ËÉÈ¸	Crimson-browed Finch
+1285	ÑªÈ¸	Scarlet Finch
+1286	ºì½»×ìÈ¸	Red Crossbill
+1287	°×³á½»×ìÈ¸	White-winged Crossbill
+1288	ºÖ»ÒÈ¸	Brown Bullfinch
+1289	ºìÍ·»ÒÈ¸	Red-headed Bullfinch
+1290	»ÒÍ·»ÒÈ¸	Grey-headed Bullfinch
+1291	ºì¸¹»ÒÈ¸	Eurasian Bullfinch
+1292	Îı×ìÈ¸	Hawfinch
+1293	ºÚÎ²À¯×ìÈ¸	Yellow-billed Grosbeak
+1294	ºÚÍ·À¯×ìÈ¸	Japanese Grosbeak
+1295	»Æ¾±ÄâÀ¯×ìÈ¸	Collared Grosbeak
+1296	°×µã³áÄâÀ¯×ìÈ¸	Spot-winged Grosbeak
+1297	°×°ß³áÄâÀ¯×ìÈ¸	White-winged Grosbeak
+1298	½ğÕíºÚÈ¸	Gold-naped Finch

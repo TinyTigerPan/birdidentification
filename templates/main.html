@@ -2,32 +2,226 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bird Identify</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
     <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: montserrat;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            background: white;
+            border-radius: 10px;
+        }
+        .center h1 {
+            text-align: center;
+            padding: 0 0 20px 0;
+        }
+        .center form {
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+        form .txt_field {
+            position: relative;
+            margin: 30px 0;
+        }
+        .txt_field input {
+            width: 100%;
+            padding: 0 5px;
+            height: 40px;
+            font-size: 16px;
+            border: none;
+            background: none;
+            outline: none;
+        }
+        .txt_field label {
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            color: #adadad;
+            transform: translateY(-50%);
+            font-size: 16px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .txt_field span::before {
+            content: "";
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: #444444;
+            transition: .5s;
+        }
+        .txt_field input:focus ~ label,
+        .txt_field input:valid ~ label {
+            top: -5px;
+            color: #444444;
+        }
+        .txt_field input:focus ~ span::before,
+        .txt_field input:valid ~ span::before {
+            width: 100%;
+        }
+
+
+        input[type="button"]{
+            width: 100%;
+            height: 40px;
+            border: 1px solid;
+            background: #ffffff;
+            border-radius: 25px;
+            font-size: 18px;
+            color: #444444;
+            font-weight: 700;
+            cursor: pointer;
+            outline: none;
+            margin-top: 5%;
+        }
+        input[type="button"]:hover {
+            border-color: #444444;
+            transition: .5s;
+        }
+        .signup_link a {
+            text-align: right;
+            color: #444444;
+            text-decoration: none;
+        }
+        .signup_link a:hover {
+            text-align: right;
+            text-decoration: underline;
+        }
+        .imgScale img{
+            max-width: 100%;
+            max-height: 100%;
+            width:auto;
+            height:auto;
+            position: absolute;
+            left: 50%;
+            padding-bottom: 20%;
+            transform: translate3d(-50%,-50%,0);
+            -webkit-transform: translate3d(-50%,-50%,0);
+        }
+        .button{
+            width: 100%;
+            height: 40px;
+            border: 1px solid;
+            background: #ffffff;
+            border-radius: 25px;
+            font-size: 18px;
+            color: #444444;
+            font-weight: 700;
+            cursor: pointer;
+            outline: none;
+            margin-top: 5%;
+        }
+
+        .file {
+            position: relative;
+            display: inline-block;
+            background: #ffffff;
+            border: 1px solid #444444;
+            border-radius: 25px;
+            padding: 4px 12px;
+            overflow: hidden;
+            color: #444444;
+            text-decoration: none;
+            text-indent: 0;
+            width: 45%;
+            height: 40px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            outline: none;
+            margin-top: 5%;
+            text-align: center;
+        }
+        .file input {
+            position: absolute;
+            font-size: 100px;
+            right: 0;
+            top: 0;
+            opacity: 0;
+        }
+        .user {
+            position: relative;
+            display: inline-block;
+            background: #ffffff;
+            border: 1px solid #444444;
+            border-radius: 25px;
+            overflow: hidden;
+            color: #444444;
+            text-decoration: none;
+            text-indent: 0;
+            width: 35%;
+            height: 27px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            outline: none;
+            text-align: center;
+        }
+
+
 
     </style>
-
 </head>
 <body>
-<div style="text-align: center">
-    <p2>鸟类识别</p2>
-</div>
+    <div class="center">
+        <div class="imgScale">
+            <img src="../static/head.JPG">
+        </div>
 
-<form action="/recognition" method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    <div style="text-align: center">
-        <input type="file" class="file-btn" name="pic" accept="image/jpg,image/jpeg,image/png,image/svg">
-        <input type="submit" value="提交">
+        <div class="txt_field" style="margin: 50px 40px 30px 40px">
+            <label style="color: #444444;position: static;font-size: 18px" for="">欢迎您，{{ name }}</label>
+            <a href="/change_passwd/">
+                <button style="float: right" class="user" type="button">修改信息</button>
+            </a>
+        </div>
+
+        <form action="/find/" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <div class="txt_field">
+                <input type="text" name="bird_name" required>
+                <label for="">点击输入需要查询鸟类的学名</label>
+
+            </div>
+            <div class="txt_field">
+                <button style="margin-top: 0" type="submit" class="button" id="verify">查询</button>
+            </div>
+        </form>
+
+        <form action="/recognition/" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="txt_field" style="margin-top: 20px">
+                 <label style="color: #444444" for="">在此传入需要识别的鸟类图片</label>
+            </div>
+            <div class="txt_field">
+                <button href="javascript:;" class="file">
+                    ① 选择文件
+                    <input class="upload" type="file" id="picFile" name="pic" onchange="readFile(this)" accept=".jpg,.png"/>
+                </button>
+                <button style="float: right" class="file" type="submit">
+                    ② 提  交
+                </button>
+            </div>
+        </form>
+        <div class="txt_field">
+            <a href="/history/">
+                <button style="margin-left: 40px; width: 80%" type="submit" class="button" id="verify">查询历史记录</button>
+            </a>
+        </div>
+
     </div>
-</form>
-
-<div align="center" style="text-align: center">
-    <p></p>
-    <p></p>
-    <p style="font-size: smaller">Powered by Zhouxianpan</p>
-    <p style="font-size: smaller">Email: zhouxianpan@vip.qq.com</p>
-</div>
 
 </body>
 </html>

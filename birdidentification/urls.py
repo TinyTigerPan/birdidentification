@@ -16,12 +16,24 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
-from birdidentification import views,recognition
+from bird import views
+from django.conf.urls.static import static
+from birdidentification import settings
+
+from django.views.generic.base import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^$', views.main),
-    url(r'^main', views.main),
-    url(r'^recognition$', views.recognition_post),
-    url(r'^result$', views.result),
-]
+    url(r'^$', views.login),
+    url(r'^login', views.login, name='login'),
+    url(r'^register', views.register, name='register'),
+    url(r'^forget', views.forget_psw, name='forget_psw'),
+    url(r'^code/', views.code, name='code'),
+    url(r'^main', views.main, name='main'),
+    url(r'^recognition/', views.recognition_post, name='recognition'),
+    url(r'^change_passwd/', views.change_passwd, name='change_passwd'),
+    url(r'^result$', views.result, name='result'),
+    url(r'^history', views.historical_actions, name='history'),
+    url(r'^find', views.find, name='find'),
+
+]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
