@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>注册账号</title>
+    <title>关于本网站</title>
     <style>
         body {
             margin: 0px;
@@ -72,7 +72,15 @@
         .txt_field input:valid ~ span::before {
             width: 100%;
         }
-        input{
+        .pass {
+            margin: -5px 0 20px 5px;
+            color: #a6a6a6;
+            cursor: pointer;
+        }
+        .pass:hover {
+            text-decoration: underline;
+        }
+        input[type="submit"]{
             width: 100%;
             height: 40px;
             border: 1px solid;
@@ -84,7 +92,24 @@
             cursor: pointer;
             outline: none;
         }
-        input:hover {
+        input[type="submit"]:hover {
+            border-color: #444444;
+            transition: .5s;
+        }
+        input[type="button"]{
+            width: 100%;
+            height: 40px;
+            border: 1px solid;
+            background: #ffffff;
+            border-radius: 25px;
+            font-size: 18px;
+            color: #444444;
+            font-weight: 700;
+            cursor: pointer;
+            outline: none;
+            margin-top: 5%;
+        }
+        input[type="button"]:hover {
             border-color: #444444;
             transition: .5s;
         }
@@ -104,7 +129,6 @@
             height:auto;
             position: absolute;
             left: 50%;
-            padding-bottom: 20%;
             transform: translate3d(-50%,-50%,0);
             -webkit-transform: translate3d(-50%,-50%,0);
         }
@@ -113,7 +137,6 @@
             color: lightcoral;
 
         }
-
     </style>
 </head>
 <body>
@@ -122,34 +145,34 @@
             <img src="../static/head.JPG">
         </div>
 
-        <form action="/register/" method="POST">
-            {% csrf_token %}
-            <div class="txt_field">
-                <input type="text" name="username" required>
-                <label for="">用户名</label>
-            </div>
-            <div class="txt_field">
-                <input type="text" name="email" required>
-                <label for="">邮箱</label>
-            </div>
-            <div class="txt_field">
-                <input type="password" name="password" required>
-                <label for="">设置密码</label>
-            </div>
-            <div class="txt_field">
-                <input type="password" name="password_again" required>
-                <label for="">重复密码</label>
-            </div>
-            <input type="submit" name="register" id="" value="注   册">
-            <div style="margin-top: 20px">
-                <a href="/login">
-                    <input type="button" value="返回首页">
-                </a>
-            </div>
-            <div style="position: relative;left: 33%;margin-top: 20px;">
-                <label class="error_msg">{{ error_msg }}</label>
-            </div>
-        </form>
+        <div class="txt_field" align="center" style="margin: 80px 40px 30px 40px">
+            <label style="color: #444444;position: static;font-size: 20px" for="">关于本网站</label>
+        </div>
+
+        <p style="color: #777777">鸟类识别网站为大家提供免费的鸟类图像识别、鸟类百科全书查询、鸟类鸣声聆听等功能。
+            鸟类百科全书由中国环境与发展国际合作委员会生物多样性工作组编写，鸟类鸣声数据来源自
+            <a href="https://www.xeno-canto.org/">
+                https://www.xeno-canto.org/
+            </a>
+        </p>
+        <p style="color: #777777;">
+            如果您在使用中遇到任何问题或者bug，可以联系网站管理员，这是我的电子邮件zhouxianpan@vip.qq.com
+        </p>
+        <p style="color: #777777;text-align: center">
+            ----------------------开发者名单------------------------
+        </p>
+        <p style="color: #777777;text-align: center">
+            周贤攀  &emsp;&emsp; 李 冰  &emsp;&emsp; 张 寅  &emsp;&emsp; 王铭远  &emsp;&emsp; 崔恒洁
+        </p>
+        <p style="color: #777777;text-align: center">
+            ---------------------------------------------------------
+        </p>
+        <p style="color: #777777;text-align: center;font-size: 15px">
+            网站最新版本为v1.2，修改于2020/06/01，欢迎反馈bug
+        </p>
+        <a href="/login">
+            <input type="button" name="" id="" value="返回首页">
+        </a>
 
     </div>
     {% if messages %}

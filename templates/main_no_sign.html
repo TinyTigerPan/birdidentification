@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>注册账号</title>
+    <title>主页</title>
     <style>
         body {
             margin: 0px;
@@ -31,7 +31,6 @@
         }
         form .txt_field {
             position: relative;
-            border-bottom: 2px solid #adadad;
             margin: 30px 0;
         }
         .txt_field input {
@@ -72,7 +71,9 @@
         .txt_field input:valid ~ span::before {
             width: 100%;
         }
-        input{
+
+
+        input[type="button"]{
             width: 100%;
             height: 40px;
             border: 1px solid;
@@ -83,8 +84,9 @@
             font-weight: 700;
             cursor: pointer;
             outline: none;
+            margin-top: 5%;
         }
-        input:hover {
+        input[type="button"]:hover {
             border-color: #444444;
             transition: .5s;
         }
@@ -108,11 +110,67 @@
             transform: translate3d(-50%,-50%,0);
             -webkit-transform: translate3d(-50%,-50%,0);
         }
-        .error_msg{
-            text-align: center;
-            color: lightcoral;
-
+        .button{
+            width: 100%;
+            height: 40px;
+            border: 1px solid;
+            background: #ffffff;
+            border-radius: 25px;
+            font-size: 18px;
+            color: #444444;
+            font-weight: 700;
+            cursor: pointer;
+            outline: none;
+            margin-top: 5%;
         }
+
+        .file {
+            position: relative;
+            display: inline-block;
+            background: #ffffff;
+            border: 1px solid #444444;
+            border-radius: 25px;
+            padding: 4px 12px;
+            overflow: hidden;
+            color: #444444;
+            text-decoration: none;
+            text-indent: 0;
+            width: 45%;
+            height: 40px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            outline: none;
+            margin-top: 5%;
+            text-align: center;
+        }
+        .file input {
+            position: absolute;
+            font-size: 100px;
+            right: 0;
+            top: 0;
+            opacity: 0;
+        }
+        .user {
+            position: relative;
+            display: inline-block;
+            background: #ffffff;
+            border: 1px solid #444444;
+            border-radius: 25px;
+            overflow: hidden;
+            color: #444444;
+            text-decoration: none;
+            text-indent: 0;
+            width: 35%;
+            height: 27px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            outline: none;
+            text-align: center;
+        }
+
+
 
     </style>
 </head>
@@ -122,32 +180,33 @@
             <img src="../static/head.JPG">
         </div>
 
-        <form action="/register/" method="POST">
+
+        <form action="/find_no_sign/" method="POST" enctype="multipart/form-data">
             {% csrf_token %}
+
             <div class="txt_field">
-                <input type="text" name="username" required>
-                <label for="">用户名</label>
-            </div>
-            <div class="txt_field">
-                <input type="text" name="email" required>
-                <label for="">邮箱</label>
+                <input type="text" name="bird_name" required>
+                <label for="">点击输入需要查询鸟类的学名</label>
+
             </div>
             <div class="txt_field">
-                <input type="password" name="password" required>
-                <label for="">设置密码</label>
+                <button style="margin-top: 0" type="submit" class="button" id="verify">查询</button>
+            </div>
+        </form>
+
+        <form action="/recognition_no_sign/" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="txt_field" style="margin-top: 20px">
+                 <label style="color: #444444" for="">在此传入需要识别的鸟类图片</label>
             </div>
             <div class="txt_field">
-                <input type="password" name="password_again" required>
-                <label for="">重复密码</label>
-            </div>
-            <input type="submit" name="register" id="" value="注   册">
-            <div style="margin-top: 20px">
-                <a href="/login">
-                    <input type="button" value="返回首页">
-                </a>
-            </div>
-            <div style="position: relative;left: 33%;margin-top: 20px;">
-                <label class="error_msg">{{ error_msg }}</label>
+                <button href="javascript:;" class="file">
+                    ① 选择文件
+                    <input class="upload" type="file" id="picFile" name="pic" onchange="readFile(this)" accept=".jpg,.png"/>
+                </button>
+                <button style="float: right" class="file" type="submit">
+                    ② 提  交
+                </button>
             </div>
         </form>
 

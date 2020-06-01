@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>图片识别结果</title>
+    <title>搜索结果</title>
     <style>
         body {
             margin: 0px;
             padding: 0px;
             font-family: montserrat;
             height: 100vh;
-            overflow: hidden;
         }
         .center {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 600px;
+            top: 17.5%;
+            left: 17.5%;
+            width: 1000px;
             background: white;
             border-radius: 10px;
         }
@@ -57,8 +55,8 @@
             text-decoration: underline;
         }
         .imgScale img{
-            max-width: 70%;
-            max-height: 70%;
+            max-width: 50%;
+            max-height: 50%;
             width:auto;
             height:auto;
             position: absolute;
@@ -110,6 +108,8 @@
             float: left;
         }
 
+
+
     </style>
 </head>
 <body>
@@ -119,19 +119,13 @@
         </div>
 
         <div class="txt_field" align="center" style="margin: 80px 40px 30px 40px">
-            <label style="color: #444444;position: static;font-size: 20px" for="">图片识别结果</label>
+            <label style="color: #444444;position: static;font-size: 20px" for="">搜索结果</label>
         </div>
 
         <table class="gridtable" align="center">
             <tr>
                 <th>结果</th>
                 {% for i in name %}
-                <td>{{ i }}</td>
-                {% endfor %}
-            </tr>
-            <tr>
-                <th>可信度</th>
-                {% for i in score %}
                 <td>{{ i }}</td>
                 {% endfor %}
             </tr>
@@ -154,7 +148,11 @@
             <tr>
                 <th>百度百科</th>
                 {% for i in baike_url %}
-                    <td><a href="{{ i }}">点击这里</a></td>
+                    {% if i == "暂无结果" %}
+                        <td>暂无结果</td>
+                    {% else %}
+                        <td><a href="{{ i }}">点击这里</a></td>
+                    {% endif %}
                 {% endfor %}
             </tr>
             <tr>
@@ -171,12 +169,13 @@
 
 
         <div class="txt_field" align="center">
-            <a href="/main">
-                <button style="width: 60%" type="submit" class="button" id="verify">返回主页</button>
+            <a href="main_no_sign.html">
+                <button style="width: 40%" type="submit" class="button" id="verify">返回主页</button>
             </a>
         </div>
 
     </div>
+
     {% if messages %}
         <script>
         {% for msg in messages %}
@@ -185,5 +184,6 @@
         </script>
     {% endif %}
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
 </body>
 </html>

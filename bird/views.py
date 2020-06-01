@@ -107,7 +107,6 @@ def code(request):
         try:
             user = models.UserInfo.objects.get(email=email)
         except Exception as e:
-            print('hhh')
             return HttpResponse('该邮箱未注册')
         request.session['email'] = email
         operation.send_code(email, request)
@@ -301,6 +300,117 @@ def main(request):
                     return render(request, 'find.html', content)
 
 
+def main_no_sign(request):
+    if request.method == 'GET':
+        get_id = request.GET.get('id')
+        if get_id == None:
+            return render(request, 'main_no_sign.html')
+        else:
+            if get_id[0]=="1":
+                pic = Image.open("media/" + get_id[2:]).convert('RGB')
+                host = 'https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&' \
+                       'client_id=rENKxWSwY4OW4UmRGNKpKzTw&client_secret=Oojh1HqumwUNaPGnoGuSVFWqGcxyqvZw'
+                apirequest = urllib.request.Request(host)
+                apirequest.add_header('Content-Type', 'application/json; charset=UTF-8')
+                response = urlopen(apirequest)
+                content = response.read()
+                content_str = str(content, encoding="utf-8")
+                # eval将字符串转换成字典
+                content_dir = eval(content_str)
+                access_token = content_dir['access_token']
+
+                request_url = "https://aip.baidubce.com/rest/2.0/image-classify/v1/animal"
+
+                w, h = pic.size
+                if w > 300:
+                    pic.thumbnail((300, h / w * 300))
+
+                output_buffer = BytesIO()
+                pic.save(output_buffer, format='JPEG')
+                byte_data = output_buffer.getvalue()
+                img = base64.b64encode(byte_data)
+                print(pic)
+                params = {"image": img}
+                params = urllib.parse.urlencode(params).encode(encoding='UTF8')
+
+                request_url = request_url + "?access_token=" + access_token
+                resrequest = urllib.request.Request(url=request_url, data=params)
+                resrequest.add_header('Content-Type', 'application/x-www-form-urlencoded')
+                response = urlopen(resrequest)  # too many time
+                content = response.read()
+                content_str = str(content, encoding="utf-8")
+                content_dir = eval(content_str)
+                result = content_dir['result']
+                name_list = []
+                score_list = []
+                scientific_name_list = []
+                songs_url_list = []
+                url_list = []
+                pos_list = []
+                for i in result:
+                    try:
+                        scientific_name = get_scientific_name(i['name'])
+                        print(scientific_name)
+                        songs_url = 'https://www.xeno-canto.org/explore?query=' + quote(scientific_name)
+                    except Exception as e:
+                        name_list.append(i['name'])
+                        score_list.append(i['score'])
+                        scientific_name_list.append('暂无结果')
+                        songs_url_list.append('暂无结果')
+                        pos_list.append("暂无结果")
+                    else:
+                        name_list.append(i['name'])
+                        score_list.append(i['score'])
+                        scientific_name_list.append(scientific_name)
+                        songs_url_list.append(songs_url)
+                    if scientific_name_list[-1] != "暂无结果":
+                        birds = models.All_Bird.objects.filter(sci_name__icontains=scientific_name_list[-1])
+                        for bird in birds:
+                            pos = "../media/" + bird.pos[9:]
+                            pos_list.append(pos)
+                    url_list.append('https://baike.baidu.com/item/' + quote(i['name']))
+                request.session['name'] = name_list
+                request.session['score'] = score_list
+                request.session['scientific_name'] = scientific_name_list
+                request.session['songs_url'] = songs_url_list
+                request.session['baike_url'] = url_list
+                request.session['pos_list'] = pos_list
+
+                if request.META.get('HTTP_X_FORWARDED_FOR'):
+                    ip = request.META.get("HTTP_X_FORWARDED_FOR")
+                else:
+                    ip = request.META.get("REMOTE_ADDR")
+
+                print("IP :", ip, '   upload picture size :', (w, h), '    result: ', name_list[0])
+                return redirect('/result')
+            if get_id[0]=="2":
+                bird_name =get_id[2:]
+                nameList = []
+                sciNameList = []
+                songsList = []
+                baiduList = []
+                manual = []
+                content = {}
+                birds = models.All_Bird.objects.filter(Q(name__icontains=bird_name) | Q(sci_name__icontains=bird_name))
+                if birds == []:
+                    content = {"name": ["暂无结果"], "scientific_name": ["暂无结果"], "songs_url ": ["暂无结果"],
+                               "baike_url": ["暂无结果"], "info_url": ["暂无结果"], }
+                    return render(request, 'find_no_sign.html', content)
+                else:
+                    for bird in birds:
+                        nameList.append(bird.name)
+                        sciNameList.append(bird.sci_name)
+                        pos = "../media/" + bird.pos[9:]
+                        manual.append(pos)
+                        songsList.append('https://www.xeno-canto.org/explore?query=' + quote(bird.sci_name))
+                        baiduList.append('https://baike.baidu.com/item/' + quote(bird.name))
+                        content = {
+                            "name": nameList, "scientific_name": sciNameList, "songs_url": songsList,
+                            "baike_url": baiduList, "info_url": manual,
+                        }
+                    return render(request, 'find_no_sign.html', content)
+
+
 @login_required
 def recognition_post(request):
     if request.method == 'GET':
@@ -391,6 +501,90 @@ def recognition_post(request):
         return redirect('/result')
 
 
+def recognition_no_sign(request):
+    if request.method == 'GET':
+        return render(request, 'main_no_sign.html')
+    if request.method == 'POST':
+        file_obj = request.FILES.get('pic')
+        print(file_obj)
+        pic = Image.open(file_obj).convert('RGB')
+        host = 'https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&' \
+               'client_id=rENKxWSwY4OW4UmRGNKpKzTw&client_secret=Oojh1HqumwUNaPGnoGuSVFWqGcxyqvZw'
+        apirequest = urllib.request.Request(host)
+        apirequest.add_header('Content-Type', 'application/json; charset=UTF-8')
+        response = urlopen(apirequest)
+        content = response.read()
+        content_str = str(content, encoding="utf-8")
+        # eval将字符串转换成字典
+        content_dir = eval(content_str)
+        access_token = content_dir['access_token']
+
+        request_url = "https://aip.baidubce.com/rest/2.0/image-classify/v1/animal"
+
+        w, h = pic.size
+        if w > 300:
+            pic.thumbnail((300, h / w * 300))
+
+        output_buffer = BytesIO()
+        pic.save(output_buffer, format='JPEG')
+        byte_data = output_buffer.getvalue()
+        img = base64.b64encode(byte_data)
+        params = {"image": img}
+        params = urllib.parse.urlencode(params).encode(encoding='UTF8')
+
+        request_url = request_url + "?access_token=" + access_token
+        resrequest = urllib.request.Request(url=request_url, data=params)
+        resrequest.add_header('Content-Type', 'application/x-www-form-urlencoded')
+        response = urlopen(resrequest)  # too many time
+        content = response.read()
+        content_str = str(content, encoding="utf-8")
+        content_dir = eval(content_str)
+
+        result = content_dir['result']
+
+        name_list = []
+        score_list = []
+        scientific_name_list = []
+        songs_url_list = []
+        url_list = []
+        pos_list = []
+        for i in result:
+            try:
+                scientific_name = get_scientific_name(i['name'])
+                print(scientific_name)
+                songs_url = 'https://www.xeno-canto.org/explore?query=' + quote(scientific_name)
+            except Exception as e:
+                name_list.append(i['name'])
+                score_list.append(i['score'])
+                scientific_name_list.append('暂无结果')
+                songs_url_list.append('暂无结果')
+                pos_list.append("暂无结果")
+            else:
+                name_list.append(i['name'])
+                score_list.append(i['score'])
+                scientific_name_list.append(scientific_name)
+                songs_url_list.append(songs_url)
+            if scientific_name_list[-1] != "暂无结果":
+                birds = models.All_Bird.objects.filter(sci_name__icontains=scientific_name_list[-1])
+                for bird in birds:
+                    pos = "../media/" + bird.pos[9:]
+                    pos_list.append(pos)
+            url_list.append('https://baike.baidu.com/item/' + quote(i['name']))
+        request.session['name'] = name_list
+        request.session['score'] = score_list
+        request.session['scientific_name'] = scientific_name_list
+        request.session['songs_url'] = songs_url_list
+        request.session['baike_url'] = url_list
+        request.session['pos_list'] = pos_list
+        if request.META.get('HTTP_X_FORWARDED_FOR'):
+            ip = request.META.get("HTTP_X_FORWARDED_FOR")
+        else:
+            ip = request.META.get("REMOTE_ADDR")
+
+        print("IP :", ip, '   upload picture size :', (w, h), '    result: ', name_list[0])
+        return redirect('/result_no_sign')
+
+
 @login_required
 def result(request):
     if request.method == 'GET':
@@ -400,6 +594,15 @@ def result(request):
                    "info_url": request.session['pos_list'], }
         username = request.user.username
         return render(request, 'result.html', content)
+
+
+def result_no_sign(request):
+    if request.method == 'GET':
+        content = {"name": request.session['name'], "score": request.session['score'],
+                   "scientific_name": request.session['scientific_name'],
+                   "songs_url": request.session['songs_url'], "baike_url": request.session['baike_url'],
+                   "info_url": request.session['pos_list'], }
+        return render(request, 'result_no_sign.html', content)
 
 
 @login_required
@@ -487,3 +690,40 @@ def find(request):
                                                    record_time=timezone.now())
 
             return render(request, 'find.html', content)
+
+
+def find_no_sign(request):
+    if request.method == 'GET':
+        return render(request, 'main_no_sign.html')
+    if request.method == 'POST':
+        bird_name = request.POST.get('bird_name')
+        nameList = []
+        sciNameList = []
+        songsList = []
+        baiduList = []
+        manual = []
+        content = {}
+        birds = models.All_Bird.objects.filter(Q(name__icontains=bird_name) | Q(sci_name__icontains=bird_name))
+        if len(birds)== 0:
+            content = {"name": ["暂无结果"], "scientific_name": ["暂无结果"], "songs_url ": ["暂无结果"],
+                       "baike_url": ["暂无结果"], "info_url": ["暂无结果"], }
+            return render(request, 'find_no_sign.html', content)
+        else:
+            for bird in birds:
+                nameList.append(bird.name)
+                sciNameList.append(bird.sci_name)
+                pos = "../media/" + bird.pos[9:]
+                manual.append(pos)
+                songsList.append('https://www.xeno-canto.org/explore?query=' + quote(bird.sci_name))
+                baiduList.append('https://baike.baidu.com/item/' + quote(bird.name))
+                content = {
+                    "name": nameList, "scientific_name": sciNameList, "songs_url": songsList,
+                    "baike_url": baiduList, "info_url": manual,
+                }
+
+            return render(request, 'find_no_sign.html', content)
+
+
+def about(request):
+    if request.method == 'GET':
+        return render(request, 'about.html')
