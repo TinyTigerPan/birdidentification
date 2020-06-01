@@ -18,6 +18,7 @@ import django.utils.timezone as timezone
 import re
 import ssl
 from django.db.models import Q
+import datetime
 
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -78,7 +79,7 @@ def login(request):
             return redirect('login')
         if user_obj:
             auth.login(request, user_obj)
-            request.session['username'] = username  # 将用户名保存到session里
+            #request.session['username'] = username  # 将用户名保存到session里    #这句是不需要的，会自动创建user对象
             models.Operation_record.objects.create(user_name=username,
                                                    operation_code=6,
                                                    record_time=timezone.now())
@@ -90,27 +91,53 @@ def login(request):
 
 
 def logout(request):
-    auth.logout(request)
-    username = request.POST.get('username')
-    request.session['username'] = username
-    models.Operation_record.objects.create(user_name=username,
+    models.Operation_record.objects.create(user_name=request.user.username,
                                            operation_code=7,
                                            record_time=timezone.now())
-    del request.session['username']
+    auth.logout(request)
+    #username = request.POST.get('username')
+    #request.session['username'] = username
+    #del request.session['username']
     return redirect('login')
 
 
 def code(request):
     if request.method == 'GET':
         email = request.GET['email']
+        try:
+            user = models.UserInfo.objects.get(email=email)
+        except Exception as e:
+            print('hhh')
+            return HttpResponse('该邮箱未注册')
+        request.session['email'] = email
         operation.send_code(email, request)
-        return HttpResponse('ok')
+        return HttpResponse('发送成功')
 
 
+@login_required
 def change_passwd(request):
     if request.method == 'GET':
-        content = {"name": request.session['username'], }
-        return render(request, 'change_passwd.html', content)
+        if request.session.get('error_msg') is not None:
+            error_msg = request.session.get('error_msg')
+            del request.session['error_msg']
+            return render(request, 'change_passwd.html', {"error_msg": error_msg})
+        return render(request, 'change_passwd.html')
+
+    if request.method == 'POST':
+        data = request.POST
+        if not request.user.check_password(data.get('old_password')):
+            request.session['error_msg'] = '原始密码输入错误'
+            return redirect('change_passwd')
+        if data.get('password') != data.get('password_again'):
+            request.session['error_msg'] = '两次输入密码不一致'
+            return redirect('change_passwd')
+        request.user.set_password(data.get('password'))
+        request.user.save()
+        models.Operation_record.objects.create(user_name=request.user.username,
+                                               operation_code=3,
+                                               record_time=timezone.now())
+        messages.success(request, '修改成功')
+        return redirect('main')
 
 
 def forget_psw(request):
@@ -124,17 +151,19 @@ def forget_psw(request):
         data = request.POST
         if data.get('password') != data.get('password_again'):
             request.session['error_msg'] = '两次输入密码不一致'
-            return redirect('forget_psw_ver')
-        if request.session.get('time') - timezone.now() > 300:
+            return redirect('forget_psw')
+        if request.session.get('time') - datetime.datetime.now().timestamp() > 300:
             request.session['error_msg'] = '操作时间太长，请重新发送验证码'
             return redirect('forget_psw')
         if data.get('code') == request.session.get('code'):
-            user = models.UserInfo.objects.get(username=request.session.get('username'))
-            user.password = data.get('password')
-            models.Operation_record.objects.create(user_name=request.session.get('username'),
+            user = models.UserInfo.objects.get(email=request.session['email'])
+            user.set_password(data.get('password'))
+            user.save()
+            models.Operation_record.objects.create(user_name=user.username,
                                                    operation_code=3,
                                                    record_time=timezone.now())
-            messages.success('修改成功')
+            messages.success(request, '修改成功')
+            return redirect('login')
 
 
 def get_scientific_name(birds):
@@ -163,7 +192,7 @@ def main(request):
         print("得到")
         print(get_id)
         if get_id == None:
-            content = {"name": request.session['username'], }
+            content = {"name": request.user.username, }
             return render(request, 'main.html', content)
         else:
             if get_id[0]=="1":
@@ -244,7 +273,7 @@ def main(request):
                 print("IP :", ip, '   upload picture size :', (w, h), '    result: ', name_list[0])
                 return redirect('/result')
             if get_id[0]=="2":
-                username = request.session['username']
+                username = request.user.username
                 bird_name =get_id[2:]
                 nameList = []
                 sciNameList = []
@@ -272,11 +301,12 @@ def main(request):
                     return render(request, 'find.html', content)
 
 
+@login_required
 def recognition_post(request):
     if request.method == 'GET':
         return render(request, 'main.html')
     if request.method == 'POST':
-        username = request.session['username']
+        username = request.user.username
         file_obj = request.FILES.get('pic')
         print(file_obj)
         pic = Image.open(file_obj).convert('RGB')
@@ -361,19 +391,21 @@ def recognition_post(request):
         return redirect('/result')
 
 
+@login_required
 def result(request):
     if request.method == 'GET':
         content = {"name": request.session['name'], "score": request.session['score'],
                    "scientific_name": request.session['scientific_name'],
                    "songs_url": request.session['songs_url'], "baike_url": request.session['baike_url'],
                    "info_url": request.session['pos_list'], }
-        username = request.session['username']
+        username = request.user.username
         return render(request, 'result.html', content)
 
 
+@login_required
 def historical_actions(request):
     if request.method == 'GET':
-        username = request.session['username']
+        username = request.user.username
         user_op = models.Operation_record.objects.all()
         a_user = user_op.filter(user_name=username).order_by("-record_time")
         names = []
@@ -414,11 +446,12 @@ def historical_actions(request):
         return render(request, 'history.html', content)
 
 
+@login_required
 def find(request):
     if request.method == 'GET':
         return render(request, 'main.html')
     if request.method == 'POST':
-        username = request.session['username']
+        username = request.user.username
         bird_name = request.POST.get('bird_name')
         nameList = []
         sciNameList = []
