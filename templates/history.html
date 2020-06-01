@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>主页</title>
+    <title>历史记录</title>
 
     <style>
 
@@ -168,7 +168,14 @@
             <button style="width: 40%" type="submit" class="button" id="verify">返回主页</button>
         </a>
     </div>
-
+    {% if messages %}
+        <script>
+        {% for msg in messages %}
+                alert('{{ msg.message }}');
+        {% endfor %}
+        </script>
+    {% endif %}
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </div>
 </body>
 </html>

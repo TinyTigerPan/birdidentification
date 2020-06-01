@@ -4,14 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>忘记密码</title>
-    {% if messages %}
-        {% for msg in messages %}
-        <script>
-                alert('{{ msg.message }}');
-        </script>
-        {% endfor %}
-    {% endif %}
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
     <style>
         body {
@@ -147,15 +139,32 @@
 
         <form action="/forget/" method="POST">
             {% csrf_token %}
-
-            <div class="txt_field">
-                <input type="text" name="username" required>
-                <label for="">用户名</label>
-            </div>
             <div class="txt_field">
                 <input style="width: 60%" type="text" id="email" required>
                 <label style="width: 60%" for="">邮箱</label>
                 <button type="button" class="button" id="verify">验证</button>
+                    <script type="text/javascript">
+                        var oBtn = document.getElementById("verify")
+                        // 初始化时间
+                        var time = 60
+                        oBtn.onclick = function(){
+                            this.disabled = true
+                            this.style.backgroundColor = "#cccccc"
+                            sendCode()
+                        }
+                        function sendCode(){
+                            time--
+                            console.log(time)
+                            oBtn.innerHTML = time+"s后重发"
+                            if(time>1){
+                                setTimeout(sendCode,1000)
+                            }else{
+                                oBtn.innerHTML = "发送验证码"
+                                oBtn.disabled = false
+                                time = 60
+                            }
+                        }
+                    </script>
             </div>
             <div class="txt_field">
                 <input type="text" name="code" required>
@@ -178,8 +187,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
         $('#verify').click(function () {
-            alert("1");
-            alert($('#email').val());
             $.ajax({
                 type:'GET',
                 url:'/code/',
@@ -194,8 +201,15 @@
                     alert('发送失败');
                 }
             });
-            alert("2");
         });
     </script>
+    {% if messages %}
+        <script>
+        {% for msg in messages %}
+                alert('{{ msg.message }}');
+        {% endfor %}
+        </script>
+    {% endif %}
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </body>
 </html>

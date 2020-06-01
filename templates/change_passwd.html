@@ -3,15 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>忘记密码</title>
-    {% if messages %}
-        {% for msg in messages %}
-        <script>
-                alert('{{ msg.message }}');
-        </script>
-        {% endfor %}
-    {% endif %}
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>修改密码</title>
 
     <style>
         body {
@@ -174,5 +166,13 @@
         </form>
     </div>
 
+    {% if messages %}
+        <script>
+        {% for msg in messages %}
+                alert('{{ msg.message }}');
+        {% endfor %}
+        </script>
+    {% endif %}
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </body>
 </html>

@@ -222,6 +222,13 @@
         </div>
 
     </div>
-
+    {% if messages %}
+        <script>
+        {% for msg in messages %}
+                alert('{{ msg.message }}');
+        {% endfor %}
+        </script>
+    {% endif %}
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </body>
 </html>
