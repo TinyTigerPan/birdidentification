@@ -191,14 +191,11 @@
                 type:'GET',
                 url:'/code/',
                 data:{'email':$('#email').val()},
-                success:function (result) {
-                    alert('发送成功！');
-                },
                 success:function (data) {
                     alert(data);
                 },
                 error:function (data) {
-                    alert('发送失败');
+                    alert(data);
                 }
             });
         });
