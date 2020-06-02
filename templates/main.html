@@ -205,7 +205,7 @@
             <div class="txt_field" style="margin-top: 20px">
                  <label style="color: #444444" for="">在此传入需要识别的鸟类图片</label>
             </div>
-            <div class="txt_field">
+            <div class="txt_field" style="margin-bottom: 5px">
                 <button href="javascript:;" class="file">
                     ① 选择文件
                     <input class="upload" type="file" id="picFile" name="pic" onchange="readFile(this)" accept=".jpg,.png"/>
@@ -213,6 +213,22 @@
                 <button style="float: right" class="file" type="submit">
                     ② 提  交
                 </button>
+                <div style="text-align: center; margin-top: 10px">
+                    <p style="align-items: center; font-size: 17px; text-align: left; color: #444444">
+                        图像处理会增加处理时间，建议只在图像质量差时按需打开
+                    </p>
+                    <a style="align-items: center; font-size: 17px; width: 30%;color: #444444;margin-left: 5px"> 图像分割
+                        <input type="checkbox" name="deal" value="FENGE" style="width: 15px; height: 15px;">
+                    </a>
+                    <a style="align-items: center; font-size: 17px; width: 30%;color: #444444;margin-left: 5px"> 图像去噪
+                        <input type="checkbox" name="deal" value="QUZAO" style="width: 15px; height: 15px;">
+                    </a>
+                    <a style="align-items: center; font-size: 17px; width: 30%;color: #444444;margin-left: 5px"> 图像锐化
+                        <input type="checkbox" name="deal" value="RUIHUA" style="width: 15px; height: 15px;">
+                    </a>
+                </div>
+
+
             </div>
         </form>
         <div class="txt_field">

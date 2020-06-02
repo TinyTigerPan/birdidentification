@@ -10,7 +10,7 @@ import base64
 from PIL import Image
 from io import BytesIO
 from django.shortcuts import render, HttpResponse, redirect
-from bird import models, operation
+from bird import models, operation, image_process
 from django.http import JsonResponse
 from django.contrib import auth, messages
 from django.contrib.auth.decorators import login_required
@@ -19,6 +19,8 @@ import re
 import ssl
 from django.db.models import Q
 import datetime
+import cv2
+import numpy
 
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -418,8 +420,19 @@ def recognition_post(request):
     if request.method == 'POST':
         username = request.user.username
         file_obj = request.FILES.get('pic')
+        deal = request.POST.getlist('deal')
         print(file_obj)
-        pic = Image.open(file_obj).convert('RGB')
+        try:
+            pic = Image.open(file_obj).convert('RGB')
+        except Exception as e:
+            messages.error(request,'未上传图片')
+            return render(request, 'main.html', {"name": request.user.username, })
+        pic = cv2.cvtColor(numpy.asarray(pic), cv2.COLOR_RGB2BGR)
+        if "FENGE" in deal:
+            pic = image_process.fenge(pic)
+        if "RUIHUA" in deal:
+            pic = image_process.ruihua(pic, 150)
+        pic = Image.fromarray(cv2.cvtColor(pic, cv2.COLOR_BGR2RGB))
         host = 'https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&' \
                'client_id=rENKxWSwY4OW4UmRGNKpKzTw&client_secret=Oojh1HqumwUNaPGnoGuSVFWqGcxyqvZw'
         apirequest = urllib.request.Request(host)
@@ -482,9 +495,15 @@ def recognition_post(request):
                 songs_url_list.append(songs_url)
             if scientific_name_list[-1] != "暂无结果":
                 birds = models.All_Bird.objects.filter(sci_name__icontains=scientific_name_list[-1])
+                '''
                 for bird in birds:
                     pos = "../media/" + bird.pos[9:]
                     pos_list.append(pos)
+                '''
+                try:
+                    pos_list.append("../media/" + birds[0].pos[9:])
+                except Exception as e:
+                    pos_list.append("暂无结果")
             url_list.append('https://baike.baidu.com/item/' + quote(i['name']))
         request.session['name'] = name_list
         request.session['score'] = score_list
@@ -506,8 +525,19 @@ def recognition_no_sign(request):
         return render(request, 'main_no_sign.html')
     if request.method == 'POST':
         file_obj = request.FILES.get('pic')
+        deal = request.POST.getlist('deal')
         print(file_obj)
-        pic = Image.open(file_obj).convert('RGB')
+        try:
+            pic = Image.open(file_obj).convert('RGB')
+        except Exception as e:
+            messages.error(request, '未上传图片')
+            return render(request, 'main.html')
+        pic = cv2.cvtColor(numpy.asarray(pic), cv2.COLOR_RGB2BGR)
+        if "FENGE" in deal:
+            pic = image_process.fenge(pic)
+        if "RUIHUA" in deal:
+            pic = image_process.ruihua(pic, 150)
+        pic = Image.fromarray(cv2.cvtColor(pic, cv2.COLOR_BGR2RGB))
         host = 'https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&' \
                'client_id=rENKxWSwY4OW4UmRGNKpKzTw&client_secret=Oojh1HqumwUNaPGnoGuSVFWqGcxyqvZw'
         apirequest = urllib.request.Request(host)
@@ -566,9 +596,15 @@ def recognition_no_sign(request):
                 songs_url_list.append(songs_url)
             if scientific_name_list[-1] != "暂无结果":
                 birds = models.All_Bird.objects.filter(sci_name__icontains=scientific_name_list[-1])
+                '''
                 for bird in birds:
                     pos = "../media/" + bird.pos[9:]
                     pos_list.append(pos)
+                '''
+                try:
+                    pos_list.append("../media/" + birds[0].pos[9:])
+                except Exception as e:
+                    pos_list.append("暂无结果")
             url_list.append('https://baike.baidu.com/item/' + quote(i['name']))
         request.session['name'] = name_list
         request.session['score'] = score_list
